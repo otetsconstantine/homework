@@ -1,0 +1,38 @@
+@import url("nullstyle.css");
+
+* {
+   color: #000000;
+}
+p {
+   color: rebeccapurple;
+}
+.blue {
+   color: blue;
+}
+.yelou {
+   color: #ffea00;
+}
+#head{
+   color: #000000;
+}
+.header-block > h2,h3 {
+   color: hsl(107, 92%, 45%);
+}
+a {
+   color: rgb(37, 37, 255);
+}
+[class*="tic"] {
+   color: #787676;
+}
+h2.info-title{
+   color: #5a0202;
+}
+li{
+   color: #ff00bb;
+}
+.page__article h2 {
+   color: #ff0000;
+}
+.page__article h3 {
+   color: #7f006e;
+}
