@@ -1,38 +1,43 @@
 @import url("nullstyle.css");
 
-* {
-   color: #000000;
-}
-p {
-   color: rebeccapurple;
+h2 {
+   color: red;
 }
 .blue {
    color: blue;
 }
-.yelou {
-   color: #ffea00;
+.yellow {
+   color: yellow;
 }
-#head{
-   color: #000000;
+#title {
+   color: green;
 }
-.header-block > h2,h3 {
-   color: hsl(107, 92%, 45%);
+[class*="__info"]{
+   color: rgb(233, 3, 241);
 }
-a {
-   color: rgb(37, 37, 255);
+p.text {
+   color: palegreen;
 }
-[class*="tic"] {
-   color: #787676;
+h3, li {
+   color: rgb(239, 157, 5);
 }
-h2.info-title{
-   color: #5a0202;
+.text ~ p {
+   color: rebeccapurple;
 }
-li{
-   color: #ff00bb;
+.page__navigation .list {
+   color: blue;
 }
-.page__article h2 {
-   color: #ff0000;
+.page__navigation > p {
+   color: darkolivegreen;
 }
-.page__article h3 {
-   color: #7f006e;
+.article-history + p {
+   color: pink;
+}
+
+.article-independence p {
+   color: darkblue;
+}
+
+.footer__info * {
+   color: khaki;
 }
