@@ -1,0 +1,87 @@
+@import url("fonts.css");
+@import url("nullstyle.css");
+/* ----------------------------------------------------- */
+
+
+
+body {
+   font-family: "Lasco";
+}
+.header__nav {
+   color: #969601;
+   font-size: 30px;
+}
+.nav__list {
+   color: #0814ff;
+   font-family: "Benguiat";
+   font-size: 24px;
+   font-weight: 700;
+   line-height: 1.5;
+}
+/* ----------------------------------------------------- */
+h1{
+   color: #f4830a;
+   font-family: "Benguiat";
+   font-size: 50px;
+   font-weight: 700;
+   font-style: italic;
+   text-shadow: 5px 5px 5px #9a4f00;
+}
+h2{
+   color: green;
+   font-size: 24px;
+   font-weight: 700;
+   text-shadow: 5px 5px 5px #69ee0a;
+}
+/* ----------------------------------------------------- */
+.page__text {
+   text-align: center;
+   line-height: 2;
+}
+.text-01 span{
+   color: #ff8708;
+   font-weight: 700;
+}
+.text-02 span {
+   text-decoration-color: #0814ff;
+}
+
+/* ----------------------------------------------------- */
+.page__home-work {
+   font-family: "Poppins";
+   line-height: 1.50;
+}
+.page__home-work span{                             
+   color: #1A1A1A;
+   font-weight: 500;
+   font-size: 20px;
+   }
+.page__home-work p{
+   color: #808080;
+   font-size: 18px;
+   font-weight: 400;
+}
+/* ----------------------------------------------------- */
+.test {
+   font-family: "Popins";
+   line-height: 2;
+}
+.uppercase {
+   text-transform: uppercase;
+   text-decoration: overline;
+   text-decoration-color: #ff3300;
+   text-decoration-style: wavy;
+}
+.lowercase {
+   text-transform: lowercase;
+   text-decoration: line-through;
+   text-decoration-color: #eaff00;
+}
+.capitalize {
+   text-transform: capitalize;
+   text-decoration: underline ;
+   text-decoration-color: #f7c600;
+}
+.word-spacing {
+   word-spacing: 10px;
+}
