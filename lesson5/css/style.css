@@ -1,0 +1,116 @@
+@import url("nullstyle.css");
+@import url("fonts.css");
+
+/* -------------------------------- */
+
+body {
+   
+}
+.header {
+}
+.page {
+   
+}
+.footer {
+}
+/* -------------------------------- */
+._container {
+   max-width: 1050px;
+   margin: 0px auto;
+}
+/* -------------------------------- */
+
+.pege__platform {
+   background-color: #231F8B;
+   padding: 112px 0px;
+}
+.platform__container {
+}
+/* -------------------------------- */
+
+.platform__header-block {
+   margin: 0px 0px 70px 0px;
+}
+.header-block__link {
+   color: #5A54F2;
+   font-family: "Montserrat","Circular-Std",sans-serif;
+   font-size: 14px;
+   font-weight: 700;
+   line-height: 1.71;
+   letter-spacing: 0.2px;
+   margin: 0px 0px 10px 0px;
+}
+.header-block__title {
+   color: #FFF;
+   font-family: "Circular-Std","Montserrat",sans-serif;
+   font-size: 36px;
+   font-weight: 700;
+   margin: 0px 0px 10px 0px;
+}
+.header-block__sub-title {
+   color: #FFF;
+   font-family:  "Circular-Std","Montserrat",sans-serif;
+   font-size: 14px;
+   font-weight: 450;
+   line-height: 1.42;
+   letter-spacing: 0.2px;
+}
+/* -------------------------------- */
+.platform__body {
+   font-size: 0;
+}
+.platform__columns {
+   width: 230px;
+   padding: 35px 40px;
+   background-color: #fff;
+   display: inline-block;
+   margin: 0px 30px 20px 0px;
+
+
+}
+
+.platform__item {
+
+}
+.item-platform {
+
+
+}
+.item-platform__icon {
+   margin: 0px 0px 20px 0px;
+}
+.item-platform__title {
+   color: #252B42;
+   font-family: "Circular-Std","Montserrat" ,sans-serif;
+   font-size: 16px;  
+   font-weight: 700;
+   line-height: 1.50;
+   letter-spacing: 0.1px;
+   margin: 0px 0px 20px 0px;
+
+}
+.item-platform__line {
+   margin: 0px 0px 20px 0px;
+}
+.item-platform__sub-title {
+   font-family: "Montserrat","Circular-Std",sans-serif;
+   font-size: 14px;
+   line-height: 1.42;
+   letter-spacing: 0.2px;
+   
+}
+
+.column-risk {
+   vertical-align: 48px;
+
+}
+.column-compliance {
+
+}
+.column-management {
+   vertical-align: 48px;
+   background-color: #5A54F2;
+}
+.column-internal {
+   margin: 0px -30px 0px 0px;
+}
