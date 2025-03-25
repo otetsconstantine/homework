@@ -7,12 +7,32 @@ body {
    
 }
 .header {
+   font-family: "Monoton";
+   background: #000;
 }
 .page {
    
 }
 .footer {
 }
+/* -------------------------------- */
+
+
+.header__logo {
+   font-size: 50px;
+   color: #050090;
+   padding: 10px 30px 20px 0px;
+}
+.header__menu {
+   display: inline-block;
+   vertical-align: 10px;
+}
+.menu__list li{
+   color: #eed70a;
+   display: inline-block;
+   margin: 0px 20px 0px 0px;
+}
+
 /* -------------------------------- */
 ._container {
    max-width: 1050px;
@@ -24,8 +44,7 @@ body {
    background-color: #231F8B;
    padding: 112px 0px;
 }
-.platform__container {
-}
+
 /* -------------------------------- */
 
 .platform__header-block {
@@ -57,6 +76,7 @@ body {
 }
 /* -------------------------------- */
 .platform__body {
+   margin: 0px 0px 100px 0px;
    font-size: 0;
 }
 .platform__columns {
@@ -65,17 +85,10 @@ body {
    background-color: #fff;
    display: inline-block;
    margin: 0px 30px 20px 0px;
-
-
-}
-
-.platform__item {
+   vertical-align: top;
 
 }
-.item-platform {
 
-
-}
 .item-platform__icon {
    margin: 0px 0px 20px 0px;
 }
@@ -101,16 +114,17 @@ body {
 }
 
 .column-risk {
-   vertical-align: 48px;
 
 }
 .column-compliance {
-
+   margin-top: 48px;
 }
 .column-management {
-   vertical-align: 48px;
+
    background-color: #5A54F2;
 }
 .column-internal {
-   margin: 0px -30px 0px 0px;
+
+   margin: 48px -30px 0px 0px;
 }
+/* ----------------------------------- */
