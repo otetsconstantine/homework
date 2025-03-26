@@ -6,6 +6,9 @@
 body {
    
 }
+.wrapper {
+   background-color: #231F8B;
+}
 .header {
    font-family: "Monoton";
    background: #000;
@@ -41,7 +44,6 @@ body {
 /* -------------------------------- */
 
 .pege__platform {
-   background-color: #231F8B;
    padding: 112px 0px;
 }
 
@@ -123,7 +125,6 @@ body {
    margin: 0px 0px 50px 0px;
 }
 .page__advantages {
-   background-color: #231F8B;
    padding: 112px 0px;
    font-family: "Doto";
    color: #000;
@@ -178,12 +179,23 @@ body {
    line-height: 2;
 }
 .test__01-img {
-   max-width: 500px;
+   max-width: 400px;
    padding: 0px 30px 0px 0px;
 }
 .test__01-text {
    display: inline-block;
    font-weight: 700;
    vertical-align: top;
-   width: 500px;
+   width: 400px;
+   color: #eed70a;
+}
+/* ------------------------------ */
+
+.footer__logo {
+   margin: 0px 50px 0px 0px;
+   display: inline-block;
+}
+.footer__text {
+   display: inline-block;
+   width: 700px;
 }
