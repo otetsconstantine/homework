@@ -52,7 +52,7 @@ body {
 .platform__header-block {
    margin: 0px 0px 70px 0px;
 }
-.header-block__link {
+strong {
    color: #5A54F2;
    font-family: "Montserrat","Circular-Std",sans-serif;
    font-size: 14px;
@@ -69,6 +69,7 @@ body {
    margin: 0px 0px 10px 0px;
 }
 .header-block__sub-title {
+   max-width: 765px;
    color: #FFF;
    font-family:  "Circular-Std","Montserrat",sans-serif;
    font-size: 14px;
@@ -78,7 +79,6 @@ body {
 }
 /* -------------------------------- */
 .platform__body {
-   margin: 0px 0px 100px 0px;
    font-size: 0;
 }
 .platform__columns {
@@ -111,14 +111,11 @@ body {
    letter-spacing: 0.2px;
    
 }
-.column-compliance {
+.column-ident {
    margin-top: 48px;
 }
 .column-management {
    background-color: #5A54F2;
-}
-.column-internal {
-   margin: 48px -30px 0px 0px;
 }
 /* ----------------------------------- */
 .advantages__header-block {
