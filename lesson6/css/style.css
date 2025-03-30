@@ -171,6 +171,7 @@
 }
 /* ----------------------------------------------- */
 .page__about {
+   background: url(../img/bg2.png) no-repeat;
    margin: 0px 0px 90px 0px;
 }
 .about__image {
