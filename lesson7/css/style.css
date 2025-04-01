@@ -1,0 +1,341 @@
+@import url("nullstyle.css");
+
+.wrapper {
+   font-family:"Inter", sans-serif;
+   overflow: clip;
+   min-height: 100%;
+   font-size: 0;
+   background: linear-gradient(180deg, #E5EFFF 0%, rgba(229, 239, 255, 0.26) 83.7%, rgba(229, 239, 255, 0.00) 100%);
+}
+
+
+._container {
+   max-width: 1231px;
+   margin: 0 auto;
+   padding: 0px 15px;
+}
+
+.header {
+   margin: 0px 0px 70px 0px;
+}
+
+/* ------------------------------------------------------ */
+
+
+.header__container {
+   width: 100%;
+   min-height: 56px;
+   padding: 37px 0px 0px 0px;
+}
+
+.header__body {
+   color: #272D4E;
+   font-family: "Roboto",sans-serif;
+   font-size: 18px;
+   font-weight: 500;
+}
+.header__logo {
+   margin: 0px 80px 0px 0px;
+   display: inline-block;
+}
+.header__manu-list {
+   display: inline-block;
+   margin: 0px 50px 0px 0px;
+}
+.header__manu-list li{
+   display: inline-block;
+}
+.header__manu-list li :hover {
+   text-decoration: underline;
+   font-size: 16px;
+}
+.header__manu-list :not(:last-child){
+   margin: 0px 24px 0px 0px;
+}
+.header__buttons {
+   display: inline-block;
+}
+.header__buttons :not(:last-child) {
+   margin: 0px 30px 0px 0px;
+}
+.header__buttons a {
+   padding: 13px 19px;
+}
+.header__buttons :hover {
+   border-radius: 60px;
+   border: 2px solid #272D4E;
+}
+.header__buttons :active {
+   color: #fff;
+   background: #5A54F2;
+}
+/* ------------------------------------------------------- */
+.page__game {
+   margin: 0px 0px 100px 0px;
+
+}
+.game__body {
+   height: 850px;
+   background: url(../img/ibg.gif) 0 0 / cover no-repeat;
+}
+.game__body h2 {
+   font-size: 50px;
+   color: #04e8a7;
+   margin: 0px 0px 50px 0px;
+   text-align: center;
+   text-transform: uppercase;
+}
+.game__body h2::before {
+   content: "";
+   width: 0;
+	height: 0;
+	border-left: 20px solid transparent;
+	border-right: 20px solid transparent;
+	border-top: 40px solid #04e8a7;
+}
+.game__body h2::after {
+   content: "";
+   width: 0;
+	height: 0;
+	border-left: 20px solid transparent;
+	border-right: 20px solid transparent;
+	border-top: 40px solid #04e8a7;
+}
+.game-start {
+   color: #000;
+   font-size: 20px;
+   text-align: center;
+   background: #FFBE48;
+   width: 100px;
+   height: 100px;
+   padding: 30px 0px 0px 0px;
+   border-radius: 50%;
+}
+
+.game-01 {
+   display: none;
+   margin: 0px 0px 0px 80px;
+   width: 250px;
+   height: 30px;
+   background-color: #874d11;
+}
+
+.game-02 {
+   display: none;
+   margin: 10px 0px 0px 220px;
+   width: 29px;
+   height: 80px;
+   background-color: #874d11;
+}
+
+.game-03 {
+   display: none;
+   margin: -8px 0px 0px 29px;
+   width: 240px;
+   height: 28px;
+   background-color: #874d11;}
+.game-04 {
+   display: none;
+   margin: -192px 0px 0px 240px;
+   width: 27px;
+   height: 200px;
+   background-color: #874d11;}
+.game-05 {
+   display: none;
+   margin: -100px 0px 0px 27px;
+   width: 250px;
+   height: 26px;
+   background-color: #874d11;}
+.game-06 {
+   display: none;
+   margin: -20px 0px 0px 250px;
+   width: 25px;
+   height: 300px;
+   background-color: #874d11;}
+.game-07 {
+   display: none;
+   margin: 136px 0px 0px -250px;
+   width: 250px;
+   height: 24px;
+   background-color: #874d11;}
+.game-08 {
+   display: none;
+   margin: 0px 0px 0px 0px;
+   width: 23px;
+   height: 200px;
+   background-color: #874d11;}
+.game-09 {
+   display: none;
+   margin: -3px 0px 0px -200px;
+   width: 200px;
+   height: 22px;
+   background-color: #874d11;}
+.game-010 {
+   display: none;
+   margin: 0px 0px 0px 0px;
+   width: 15px;
+   height: 150px;
+   background-color: rgb(208, 102, 26);
+}
+.game-winner {
+   display: none;
+   margin: 50px 0px 0px -40px;
+   width: 100px;
+   height: 100px;
+   background-color: rgb(132, 255, 45);
+}
+.game-gift {
+   display: none;
+   margin: 0px 0px 0px 0px;
+   width: 100px;
+   height: 100px;
+}
+
+.game-start:hover .game-01{
+   display: block;
+}
+.game-01:hover .game-02{
+   display: block;
+}
+.game-02:hover .game-03{
+   display: block;
+}
+.game-03:hover .game-04{
+   display: block;
+}
+.game-04:hover .game-05{
+   display: block;
+}
+.game-05:hover .game-06{
+   display: block;
+}
+.game-06:hover .game-07{
+   display: block;
+}
+.game-07:hover .game-08{
+   display: block;
+}
+.game-08:hover .game-09{
+   display: block;
+}
+.game-09:hover .game-010{
+   display: block;
+}
+.game-010:hover .game-winner{
+   display: block;
+}
+.game-winner:hover .game-gift{
+   display: block;
+}
+
+/* ------------------------------------------------------------------- */
+
+.page__faculty {
+   background-color: #412672;
+}
+.faculty__container {
+}
+.faculty__body {
+   padding: 60px 0px 100px 0px;
+   /* width: 33.333%; */
+
+}
+.faculty__head {
+   max-width: 400px;
+   margin: 0px 0px 30px 0px;
+   color: #fff;
+   font-size: 38px;
+   line-height: 1.2;
+}
+.faculty__head span {
+   font-weight: 700;
+}
+.faculty__column {
+   background-color: #fff;
+   padding: 20px;
+   max-width: 387px;
+   max-height: 475px;
+   margin: 0px 20px 0px 0px;
+   display: inline-block;
+}
+.faculty__column:last-child {
+   margin: 0px 0px 0px 0px;
+}
+.faculty__column:hover {
+   background: #FFBE48;
+   box-shadow: 0px 384px 108px 0px rgba(0, 0, 0, 0.00), 0px 246px 98px 0px rgba(0, 0, 0, 0.01), 0px 138px 83px 0px rgba(0, 0, 0, 0.05), 0px 62px 62px 0px rgba(0, 0, 0, 0.09), 0px 15px 34px 0px rgba(0, 0, 0, 0.10);
+}
+
+.faculty__item {
+   
+}
+.faculty__item > *:not(:last-child){
+   margin-bottom: 16px;
+}
+.faculty__item-image {
+   height: 266px;
+}
+.faculty__item-title {
+   color: #000;
+   font-size: 22px;
+   font-weight: 600;
+}
+.faculty__item-text {
+   color: #4F4F4F;
+   font-size: 15px;
+   line-height: 1.26;
+   height: 76px;
+   overflow: auto;
+}
+.faculty__item-link {
+
+   color: #FE3F3F;
+   font-size: 15px;
+   line-height: 1.26;
+}
+.faculty__item-link:hover{
+   text-decoration: underline;
+}
+/* ---------------------------------------------------------------- */
+
+.page__news {
+   background-color: #FFF;
+}
+.news__body {
+   padding: 55px 0px 44px 0px;
+}
+.news__item {
+   max-width: 540px;
+   padding: 100px 0px 95px 0px;
+}
+.news__item > *:not(:last-child){
+   margin: 0px 0px 20px 0px;
+}
+.item__head {
+   color: #412672;
+   font-size: 38px;
+   line-height: 1.1;
+}
+.item__head span {
+   font-weight: 700;
+}
+
+.item__text {
+   color:  #412672;
+   font-size: 22px;
+   line-height: 1.3;
+}
+.item__list {
+   color: #4F4F4F;
+   font-size: 20px;
+   line-height: 2.25;
+}
+.item__list li::before {
+   content: "";
+   background: url(../img/check.svg) 0 0 no-repeat;
+   width: 29px;
+   height: 29px;
+   display: inline-block;
+   margin: 0px 15px 0px 0px;
+   vertical-align: middle;
+}
