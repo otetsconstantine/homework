@@ -19,13 +19,9 @@
 /* ------------------------------------------------------- */
 .header {
    background-color: #144867;
-   height: 100%;
+   width: 100%;
    padding: 23px 0px;
    min-height: 128px;
-}
-.header__container {
-
-
 }
 .header__container * {
    display: inline-block;
