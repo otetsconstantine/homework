@@ -123,12 +123,13 @@ h2 {
 
 }
 .footer__container {
+   padding: 70px 0px;
 }
 ._container {
 }
 .footer__body {
    margin: 0px -100px -70px 0px;
-   padding: 70px 0px;
+
 }
 .footer__body > * {
    display: inline-block;
