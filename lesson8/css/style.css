@@ -14,12 +14,7 @@
    padding: 0px 15px;
 }
 
-h2 {
-   text-align: center;
-   font-size: 30px;
-   font-weight: 700;
-   margin: 0px 0px 30px 0px;
-}
+
 
 /* ------------------------------------------------------- */
 .header {
@@ -78,7 +73,11 @@ h2 {
    color: #000;
 }
 
-.main__container {
+.main__container h2 {
+   text-align: center;
+   font-size: 30px;
+   font-weight: 700;
+   margin: 0px 0px 30px 0px;
 }
 .main__body img {
    margin: 0px 20px 0px 0px;
