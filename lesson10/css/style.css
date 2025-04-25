@@ -1,0 +1,343 @@
+@import url("nullstyle.css");
+@import url("fonts.css");
+
+.wrapper {
+   font-family:"Poppins","Roboto","Circular-Std", sans-serif;
+   overflow: clip;
+   min-height: 100%;
+   font-size: 0;
+}
+
+[class*="__container"] {
+   max-width: 1260px;
+   margin: 0 auto;
+   padding: 0px 15px;
+}
+
+/* ------------------------------------------------------- */
+.page {
+}
+.page__main {
+}
+.main {
+   padding: 100px 0px 100px 0px;
+}
+.main__container {
+}
+.main__body {
+}
+.main__item {
+}
+.item-main {
+   display: inline-block;
+   max-width: 264px;
+   height: 327px;
+   position: relative;
+   border: 1px solid #E6E6E6;
+}
+.item-main:hover {
+   border: 1px solid #2C742F;
+   box-shadow: 0px 0px 12px 0px rgba(32, 181, 38, 0.32)
+}
+.item-main__label {
+   background-color: #EA4B48;
+   border-radius: 4px;
+   padding: 3px 8px;
+   font-size: 14px;
+   color: #fff;
+   line-height: 1.5;
+   display: inline-block;
+   position: absolute;
+   top: 16px;
+   left: 16px;
+}
+.item-main__promo {
+   font-weight: 400;
+   display: inline-block;
+}
+.item-main__discount {
+   font-weight: 500;
+   display: inline-block;
+}
+.item-main__action {
+   position: absolute;
+   top: 16px;
+   right: 16px;
+   opacity: 0;
+	visibility: hidden;
+}
+.item-main:hover .item-main__action {
+   opacity: 1;
+	visibility: visible;
+}
+.item-main__wishlist {
+   display: block;
+   margin: 0px 0px 6px 0px;
+   width: 40px;
+   height: 40px;
+   border-radius: 50%;
+   border: 1px solid #E6E6E6;
+   padding: 10px;
+   background-color: #fff;
+}
+.item-main__wishlist:hover {
+   background-color: #00B207;
+}
+.item-main__view {
+   display: block;
+   width: 40px;
+   height: 40px;
+   border-radius: 50%;
+   border: 1px solid #E6E6E6;
+   padding: 10px;
+   background-color: #fff;
+}
+.item-main__view:hover {
+   background-color: #00B207;
+}
+.item-main__image {
+padding: 5px 5px 0px 5px;
+}
+.item-main__about {
+   line-height: 1.5;
+   padding: 12px;
+}
+.item-main__name {
+   font-size: 14px;
+   color: #4D4D4D;
+   overflow: hidden;
+}
+.item-main__name:hover {
+   color: #2C742F;
+}
+.item-main__price {
+   font-size: 16px;
+   color: #1A1A1A;
+   font-weight: 500;
+}
+.item-main__new {
+   display: inline;
+}
+.item-main__old {
+   display: inline;
+   color: #999;
+   text-decoration: line-through;
+}
+.item-main__cart {
+   position: absolute;
+   right: 16px;
+   bottom: 24px;
+   width: 40px;
+   height: 40px;
+   border-radius: 50%;
+   padding: 10px;
+   background: #E6E6E6 url(../img/Bagblack.svg)center no-repeat;
+}
+.item-main__cart:hover {
+   background: #00B207 url(../img/Bag.svg)center no-repeat;
+}
+.item-main__cart:active {
+   background: #2C742F url(../img/Bag.svg)center no-repeat;
+}
+/* ------------------------------------------------------- */
+.page__article {
+}
+.article {
+   background-color: #5A54F2;
+   position: relative;
+}
+
+.article::before,
+.article::after {
+   content: "";
+   position: absolute;
+   left: -5%;
+   width: 110%;
+   height: 55px;
+}
+.article::before {
+   border-radius: 0% 0% 50% 50%/0% 0% 100% 100%;
+   background-color: #fff;
+   top: 0;
+}
+.article::after {
+   border-radius: 50% 50% 0% 0%/100% 100% 0% 0%;
+   background-color: #fff;
+   bottom: 0;
+}
+
+/* ------------------------------------------------------- */
+.article__container {
+   position: relative;
+}
+.article__container::before {
+   content: "";
+   width: 214px;
+   height: 466px;
+   position: absolute;
+   top: 417px;
+   left: -95px;
+   background-image: url(../img/greenpoints1.webp);
+}
+.article__container::after {
+   content: "";
+   width: 472px;
+   height: 214px;
+   position: absolute;
+   bottom: 144px;
+   right: 90px;
+   background-image: url(../img/greenpoints2.webp) ;
+}
+/* ------------------------------------------------------- */
+.article__technology {
+}
+.technology-article {
+   margin: 0px 0px 55px 0px;
+}
+.technology-article__image {
+   max-width: 430px;
+   height: 548px;
+   display: inline-block;
+   border-radius: 20px;
+   box-shadow: -25px 20px 44px 0px rgba(84, 48, 209, 0.40);
+   overflow: hidden;
+   margin: 0px 70px 0px 0px;
+}
+.technology-article__image::before {
+   content: "";
+   border: 5px solid #FFBA49;
+   border-radius: 50%;
+   width: 65px;
+   height: 65px;
+   position: absolute;
+   left: -128px;
+   top: 168px;
+}
+.technology-article__image::after {
+   content: "";
+   border: 5px solid #FFBA49;
+   border-radius: 50%;
+   width: 400px;
+   height: 400px;
+   position: absolute;
+   left: -108px;
+   top: 213px;
+}
+.technology-article__image img {
+   position: relative;
+   width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+   object-fit: cover;
+   z-index: 1;
+}
+.technology-article__content {
+   display: inline-block;
+   vertical-align: top;
+   padding: 138px 0px 0px 0px;
+}
+.technology-article__title {
+   margin: 0px 0px 13px 0px;
+   max-width: 600px;
+}
+.technology-article__text {
+   max-width: 480px;
+   margin: 0px 0px 39px 0px;
+}
+.technology-article__button {
+}
+.button-orange {
+   color: #fff;
+   font-family: "Roboto";
+   font-size: 18px;
+   font-weight: 500;
+   padding: 21px 26px;
+   background-color: #F35B09;
+   border-radius: 60px;
+}
+.title {
+   color: #fff;
+   font-family: "Circular-Std";
+   font-size: 36px;
+   font-weight: 700;
+   line-height: 1.28;
+}
+.text {
+   color: #fff;
+   font-family: "Roboto";
+   font-size: 18px;
+   line-height: 1.67;
+}
+/* ------------------------------------------------------- */
+.article__explore {
+}
+.explore-article {
+   position: relative;
+   margin-left: auto;
+   max-width: 980px;
+   z-index: 1;
+   margin: 0px 0px -30px 0px;
+}
+.explore-article__content {
+   display: inline-block;
+   vertical-align: top;
+   margin: 0px 69px 30px 0px;
+   padding: 30px 0px 0px 0px;
+}
+.explore-article__title {
+   max-width: 480px;
+   margin: 0px 0px 13px 0px;
+}
+.explore-article__text {
+   max-width: 480px;
+   margin: 0px 0px 39px 0px;
+}
+.explore-article__image {
+   max-width: 430px;
+   height: 548px;
+   display: inline-block;
+   border-radius: 20px;
+   box-shadow: 22px 42px 44px 0px rgba(0, 0, 0, 0.30);
+   overflow: hidden;
+}
+.explore-article__image::before {
+   content: "";
+   border: 5px solid #FFBA49;
+   border-radius: 50%;
+   width: 65px;
+   height: 65px;
+   position: absolute;
+   right: 273px;
+   bottom: 531px;
+   z-index: 2;
+}
+.explore-article__image::after {
+   content: "";
+   border: 5px solid #FFBA49;
+   border-radius: 50%;
+   width: 262px;
+   height: 262px;
+   position: absolute;
+   right: -129px;
+   bottom: 312px;
+}
+.explore-article__image img {
+   position: relative;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+   object-fit: cover;
+   z-index: 1;
+}
+
+/* ------------------------------------------------------- */
+/* ------------------------------------------------------- */
+/* ------------------------------------------------------- */
+/* ------------------------------------------------------- */
+/* ------------------------------------------------------- */
+/* ------------------------------------------------------- */
+/* ------------------------------------------------------- */
+
+
