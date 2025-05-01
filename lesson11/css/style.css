@@ -90,12 +90,13 @@
    width: 200px;
    height: 200px;
    border: 2px solid #000000;
-   border-radius: 100% 0% 0% 100% / 58% 100% 0% 42% ;
+   border-radius:100% 0% 100% 0% / 100% 100% 0% 0% ;
    background: linear-gradient(90deg, rgba(148, 148, 148, 1) 0%, rgba(99, 99, 99, 1) 49%, rgba(79, 79, 79, 1) 100%);
    position: absolute;
-   right: 67px;
-   top: -100px;
+   right: 40px;
+   top: -140px;
    box-shadow: 20px -10px 50px 0px #000000;
+   transform: rotate(20deg);
 }
 .airship__dome::after {
    content: "";
@@ -105,7 +106,7 @@
    border-radius: 16% 84% 86% 14% / 44% 50% 50% 56%;
    background: linear-gradient(90deg, rgba(148, 148, 148, 1) 0%, rgba(99, 99, 99, 1) 49%, rgba(79, 79, 79, 1) 100%);
    position: absolute;
-   right: 50px;
+   right: 70px;
    top: 170px;
 }
 
@@ -193,9 +194,9 @@
 }
 .airship:hover .airship__propeller {
    transform: rotateX(3600deg);
-   transition: all 15s;
+   transition: all 20s;
 }
-.airship:hover {
+.airship:hover  {
    transform: translateX(-400px);
    transition: all 15s;
 }
@@ -371,6 +372,7 @@
 }
 .something__ladybug:hover {
    transform: scale3d(5, 5, 5);
+   position: relative;
 }
 /* ------------------------------------------------------- */
 .something__translate3d {
@@ -506,7 +508,7 @@
 .earth__river {
 }
 .river {
-   min-height: 200px;
+   min-height: 300px;
    background: #0268d5;
    position: relative;
 }
@@ -517,7 +519,7 @@
    background: #b25900;
    border-radius: 100% 0% 51% 49% / 0% 0% 100% 100%;
    position: absolute;
-   top: 80px;
+   top: 200px;
    z-index: 1;
 }
 .river:hover .river__canoe {
