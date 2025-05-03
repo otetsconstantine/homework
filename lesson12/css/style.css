@@ -1,0 +1,430 @@
+@import url("nullstyle.css");
+/* @import url("fonts.css"); */
+
+.wrapper {
+   font-family:"Poppins", sans-serif;
+   overflow: clip;
+   min-height: 100%;
+   font-size: 0;
+}
+
+[class*="__container"]  {
+   max-width: 1500px;
+   margin: 0 auto;
+   padding: 0px 15px;
+}
+
+
+
+/* ------------------------------------------------------- */
+@keyframes rotate-propeller {
+   0% {
+      transform: rotateX(0deg);
+   }
+   100% {
+      transform: rotateX(360deg);
+   }
+}
+@keyframes move-airship {
+   0% {
+      transform: translate(-200px);
+   }
+   20% {
+      transform: translate(200px);
+   }
+   30% {
+      transform: translate(200px, 200px);
+   }
+   40% {
+      transform: translate(200px,0px);
+   }
+   50% {
+      transform: translate(200px,0px) scale(0.8);
+   }
+   60% {
+      transform: translate(200px,0px) scale(1.2);
+   }
+   100% {
+      transform: translate(600px, 200px) scale(1.5);
+   }
+}
+@keyframes door {
+   0%{
+      transform-origin: left;
+      transform: rotateY(0deg);
+   }
+   30%{
+      transform-origin: left;
+      transform: rotateY(110deg);
+   }
+   70%{
+      transform-origin: left;
+      transform: rotateY(110deg);
+   }
+   100%{
+      transform-origin: left;
+      transform: rotateY(0deg);
+   }
+}
+@keyframes guy {
+   0% {
+      opacity: 1;
+      visibility: visible;
+   }
+   25% {
+      transform: translateY(100px);
+      opacity: 1;
+      visibility: visible;
+   }
+   50% {
+      transform: translate(100px,100px);
+      opacity: 1;
+      visibility: visible;
+   }
+   100% {
+      transform: translate(100px,100px);
+      opacity: 1;
+      visibility: visible;
+   }
+}
+@keyframes cable {
+   20% {
+      transform: rotateX(180deg);
+   }
+   100% {
+      transform: rotateX(90deg);
+   }
+}
+@keyframes airplane-top {
+   0% {
+      transform: translate(1700px);
+   }
+   10% {
+      visibility: visible;
+   }
+   100% {
+      transform: translate(-250px);
+   }
+}
+@keyframes airplane-bottom {
+   0% {
+      transform: translate(1700px, 350px);
+   }
+   10% {
+      visibility: visible;
+   }
+   100% {
+      transform: translate(-250px, 350px);
+   }
+}
+@keyframes airplane-closer {
+   0% {
+      transform: translate(1700px, 170px) scale(1.2);
+   }
+   10% {
+      visibility: visible;
+   }
+   100% {
+      transform: translate(-250px, 170px) scale(1.2);
+   }
+}
+@keyframes airplane-remotely {
+   0% {
+      transform: translate(1700px, 170px) scale(0.8);
+   }
+   10% {
+      visibility: visible;
+   }
+   100% {
+      transform: translate(-250px, 170px) scale(0.8);
+   }
+}
+/* ------------------------------------------------------- */
+.airship__propeller {
+   animation: rotate-propeller 1s linear infinite ;
+}
+.airship {
+   animation: move-airship 15s linear 1 alternate forwards;
+}
+.airship__door span {
+   animation: door 5s linear 1 alternate forwards 16s;
+}
+.airship__guy {
+   animation: guy 6s linear 1 alternate forwards 17s;
+}
+.airship__cable {
+   animation: cable 5s linear 1 alternate forwards 17s;
+}
+.obstacles__top {
+   animation: airplane-top  7s linear 1 alternate forwards;
+}
+.obstacles__bottom {
+   animation: airplane-bottom  7s linear 1 alternate forwards 2s;
+}
+.obstacles__closer {
+   animation: airplane-closer  7s linear 1 alternate forwards 3s;
+}
+.obstacles__remotely {
+   animation: airplane-remotely  7s linear 1 alternate forwards 5s;
+}
+/* ------------------------------------------------------- */
+	/*	Універсальний запис
+	animation
+
+	Порядок запису властивостей:
+	animation-name
+	animation-duration
+	animation-timing-function
+	animation-iteration-count
+	animation-direction
+	animation-play-state
+	animation-delay
+	animation-fill-mode
+    animation: move 1s linear 5 normal running 0s forwards; */
+	/*
+	animation:
+		move 1s linear 5 normal running 0s forwards,
+		color-change 5s ease forwards,
+		rotate 1s infinite;
+	*/
+/* ------------------------------------------------------- */
+.obstacles {
+   position: relative;
+   min-height: 800px;
+}
+.obstacles__top {
+   width: 200px;
+   height: 200px;
+   background: url(../img/bombaair.png)0 0 / cover no-repeat; 
+   position: absolute;
+   visibility: hidden;
+}
+.obstacles__bottom {
+   width: 200px;
+   height: 200px;
+   background: url(../img/bombaair.png)0 0 / cover no-repeat; 
+   position: absolute;
+   visibility: hidden;
+}
+.obstacles__closer {
+   width: 200px;
+   height: 200px;
+   background: url(../img/bombaair.png)0 0 / cover no-repeat; 
+   position: absolute;
+   z-index: 2;
+   visibility: hidden;
+}
+.obstacles__remotely {
+   width: 200px;
+   height: 200px;
+   background: url(../img/bombaair.png)0 0 / cover no-repeat; 
+   position: absolute;
+   visibility: hidden;
+}
+/* ------------------------------------------------------- */
+.main__body {
+   position: relative;
+   min-height: 800px;
+   background-color: #d22020;
+}
+.main__airship {
+}
+.airship {
+   padding: 100px;
+   position: absolute;
+   top: 0;
+}
+
+.airship__dome {
+   border: 2px solid #111;
+   width: 500px;
+   height: 200px;
+   border-radius: 50%;
+   position: relative;
+   background: url(../img/rotated_image.png), linear-gradient(90deg,rgba(66, 66, 66, 1) 0%, rgba(97, 97, 97, 1) 49%, rgba(201, 201, 201, 1) 100%);
+   background-size: cover, cover;
+   background-repeat: no-repeat, no-repeat;
+   background-position: center, center;
+   box-shadow: 10px 10px 25px 10px #00000047;
+}
+.airship__dome::before {
+   content: "";
+   width: 80px;
+   height: 80px;
+   border: 2px solid #000000;
+   border-radius:9% 91% 70% 30% / 100% 100% 0% 0% ;
+   background:linear-gradient(90deg,rgba(66, 66, 66, 1) 0%, rgba(97, 97, 97, 1) 49%, rgba(201, 201, 201, 1) 100%);
+   position: relative;
+   left: 21px;
+   top: -45px;
+   box-shadow: 10px 10px 25px 10px #00000047;
+   transform: rotate(-21deg);
+}
+.airship__dome::after {
+   content: "";
+   width: 80px;
+   height: 25px;
+   border: 2px solid #000000;
+   border-radius: 16% 84% 86% 14% / 44% 50% 50% 56%;
+   background: linear-gradient(90deg,rgba(66, 66, 66, 1) 0%, rgba(97, 97, 97, 1) 49%, rgba(201, 201, 201, 1) 100%);
+   position: relative;
+   left: -45px;
+   top: 30px;
+}
+
+.airship__cabin * {
+   display: inline-block;
+}
+.airship__cabin *:not(:last-child){
+   margin: 0px 8px 0px 0px;
+}
+
+.airship__cabin {
+   border:2px solid #111;
+   width: 250px;
+   height: 75px;
+   border-radius: 10px;
+   position: relative;
+   top: -20px;
+   left: 125px;
+   background: linear-gradient(0deg,rgba(238, 255, 0, 1) 50%, rgba(45, 114, 253, 1) 50%);
+   box-shadow: 10px 10px 25px 10px #00000047;
+}
+.airship__window {
+   border: 2px solid #111;
+   border-radius: 5px;
+   width: 30px;
+   height: 30px;
+   position: relative;
+   top: 5px;
+   left: 10px;
+   background: url(../img/avatar.jpg) 0 / cover no-repeat;
+}
+
+.airship__door {
+   width: 25px;
+   height: 50px;
+   border: 2px solid #111;
+   border-radius: 5px;
+   position: relative;
+   top: 5px;
+   left: 10px;
+   background: #c1c1c1;
+}
+.airship__door span{
+   display: block;
+   width: 25px;
+   height: 50px;
+   border: 2px solid #111;
+   border-radius: 5px;
+   position: relative;
+   top: -2px;
+   left: -2px;
+   background: linear-gradient(0deg,rgba(238, 255, 0, 1) 50%, rgba(45, 114, 253, 1) 50%);
+}
+.airship__door span::before {
+   content: "";
+   width: 19px;
+   height: 20px;
+   border: 1px solid #111;
+   border-radius: 5px;
+   position: relative;
+   top: 2px;
+   left: 1px;
+   background: #c1c1c1;
+}
+
+.airship__windows {
+   position: relative;
+   top: 18px;
+   left: 5px;
+}
+.airship__item {
+   border: 2px solid #111;
+   border-radius: 50% ;
+   width: 25px;
+   height: 25px;
+   background-color: #c1c1c1;
+}
+
+.airship__engine {
+   width: 30px;
+   height: 100px;
+   position: relative;
+   left: -28px;
+   top: -230px;
+}
+
+.airship__engine::before {
+   content: "";
+   display: inline-block;
+   width: 15px;
+   height: 5px;
+   border: 2px solid #111;
+   position: relative;
+   top: 50px;
+   left: 15px;
+}
+.airship__propeller {
+   position: relative;
+   top: -4px;
+   left: 4px;
+}
+
+.airship__propeller::before {
+   content: "";
+   display: block;
+   width: 20px;
+   height: 50px;
+   border: 2px solid #111;
+   border-radius: 51% 49% 49% 51% / 46% 44% 56% 54% ;
+   position: relative;
+   background-color: #c1c1c1;
+}
+.airship__propeller::after {
+   content: "";
+   display: block;
+   width: 20px;
+   height: 50px;
+   border: 2px solid #111;
+   border-radius: 51% 49% 49% 51% / 46% 44% 56% 54% ;
+   position: relative;
+   background-color: #c1c1c1;
+}
+
+
+.airship__guy {
+   position: absolute;
+   z-index: 2;
+   border-radius: 5px;
+   top: 295px;
+   left: 403px;
+   width: 23px;
+   height: 48px;
+   background: url(../img/uehmyh.png) -10px 0 / cover no-repeat;
+   opacity: 0;
+   visibility: hidden;
+}
+.airship__cable {
+   width: 2px;
+   height: 100px;
+   background: #000000;
+   position: absolute;
+   top: 240px;
+   left: 415px;
+   transform: rotateX(90deg);
+   transform-origin: bottom;
+}
+/* ------------------------------------------------------- */
+/* ------------------------------------------------------- */
+/* ------------------------------------------------------- */
+/* ------------------------------------------------------- */
+/* ------------------------------------------------------- */
+/* ------------------------------------------------------- */
+/* ------------------------------------------------------- */
+/* ------------------------------------------------------- */
+/* ------------------------------------------------------- */
+
+/* ------------------------------------------------------- */
+
+
