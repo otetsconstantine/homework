@@ -2,7 +2,6 @@
 /* @import url("fonts.css"); */
 
 .wrapper {
-   font-family:"Poppins", sans-serif;
    overflow: clip;
    min-height: 100%;
    font-size: 0;
@@ -71,6 +70,7 @@
    z-index: 19;
    visibility: hidden;
 }
+
 .elements__bottom {
    width: 200px;
    height: 200px;
@@ -94,6 +94,44 @@
    position: absolute;
    z-index: 19;
    visibility: hidden;
+}
+.elements__top::before {
+   content: "";
+   width: 10px;
+   height: 10px;
+   border-radius: 50%;
+   background: #000000;
+   position: relative;
+   top: 145px;
+   left: 70px;
+}.elements__bottom::before {
+   content: "";
+   width: 10px;
+   height: 10px;
+   border-radius: 50%;
+   background: #000000;
+   position: relative;
+   top: 145px;
+   left: 70px;
+}.elements__closer::before {
+   content: "";
+   width: 10px;
+   height: 10px;
+   border-radius: 50%;
+   background: #000000;
+   position: relative;
+   top: 145px;
+   left: 70px;
+}
+.elements__remotely::before {
+   content: "";
+   width: 10px;
+   height: 10px;
+   border-radius: 50%;
+   background: #000000;
+   position: relative;
+   top: 145px;
+   left: 70px;
 }
 /* ------------------------------------------------------- */
 .main {
@@ -298,7 +336,7 @@
    background: url(../img/moutain.png) 0 0 / cover no-repeat;
 }
 .main__river {
-   height: 300px;
+   height: 200px;
    background: url(../img/river.gif) center /cover no-repeat;
    position: relative;
    top: 400px;
@@ -489,6 +527,11 @@
       transform: translate(1500px);
    }
 }
+@keyframes ball {
+   100% {
+      transform: translate(-1000px);
+   }
+}
 /* ------------------------------------------------------- */
 .airship__propeller {
    animation: rotate-propeller 1s linear infinite ;
@@ -532,17 +575,9 @@
 .main__boat {
    animation: boat 9s 1 linear  normal forwards 20500ms;
 }
+.elements__top::before, .elements__bottom::before, .elements__closer::before, .elements__remotely::before {
+   animation: ball 1s linear normal infinite forwards;
+}
 
-/* ------------------------------------------------------- */
-/* ------------------------------------------------------- */
-/* ------------------------------------------------------- */
-/* ------------------------------------------------------- */
-/* ------------------------------------------------------- */
-/* ------------------------------------------------------- */
-/* ------------------------------------------------------- */
-/* ------------------------------------------------------- */
-/* ------------------------------------------------------- */
-
-/* ------------------------------------------------------- */
 
 
