@@ -1,0 +1,344 @@
+@import url("nullstyle.css");
+/* @import url("fonts.css"); */
+
+.wrapper {
+   font-family:"Poppins", sans-serif;
+   overflow: clip;
+   min-height: 100%;
+   display: flex;
+   flex-direction: column;
+}
+
+[class*="__container"]  {
+   max-width: 1350px;
+   margin: 0 auto;
+   padding: 0px 15px;
+}
+main {
+   flex-grow: 1;
+   
+}
+
+
+/* ------------------------------------------------------- */
+
+.form__body {
+   padding: 32px 0px;
+   display: flex;
+   flex-wrap: wrap;
+   gap: 24px;
+   line-height: 1.5;
+}
+.info {
+   flex: 0 1 872px;
+   padding: 0px 0px 32px 0px;
+}
+.billing {
+   display: flex;
+   flex-wrap: wrap;
+   border-bottom: 1px solid #E6E6E6;
+   padding: 0px 0px 32px 0px;
+}
+.head {
+   flex: 1 1 100%;
+   font-weight: 500;
+   font-size: 24px;
+   margin-bottom: 20px;
+}
+
+.billing__body {
+   display: flex;
+   flex-wrap: wrap;
+   gap: 16px;
+}
+
+.billing__label, .additional__label {
+   font-size: 14px;
+   margin-bottom: 8px;
+   display: inline-block;
+}
+.billing__label span {
+   opacity: 0.6;
+}
+.billing__input {
+   border-radius: 6px;
+   border: 1px solid #E6E6E6;
+   min-height: 49px;
+   padding: 0px 16px;
+   font-size: 16px;
+}
+
+.billing__select {
+   font-size: 16px;
+   color: #757575;
+   border-radius: 6px;
+   border: 1px solid #E6E6E6;
+   min-height: 49px;
+   padding: 0px 16px;
+}
+
+.billing__input:focus-visible, .billing__select:focus-visible, .additional__textarea:focus-visible {
+   outline: 1px solid #00B207;
+} 
+.billing__input:hover, .billing__select:hover, .additional__textarea:hover {
+   border: 1px solid #00B207;
+   transition: all 0.5s;
+} 
+.billing__input:focus-visible::placeholder, .billing__select:focus-visible::placeholder, .billing__checkbox:focus-visible::placeholder, .additional__textarea:focus-visible::placeholder {
+   opacity: 0;
+   transition: opacity 0.5s;
+} 
+
+
+/* ------------------------------------------------------- */
+.billing__first-name {
+   flex: 0 0 280px;
+}
+/* ------------------------------------------------------- */
+
+.billing__last-name {
+      flex: 0 1 280px;
+
+}
+/* ------------------------------------------------------- */
+
+.billing__company-name {
+      flex: 0 1 280px;
+
+}
+/* ------------------------------------------------------- */
+
+.billing__street-address {
+      flex: 0 1 100%;
+
+}
+/* ------------------------------------------------------- */
+
+.billing__country-region {
+      flex: 0 1 280px;
+
+}
+
+/* ------------------------------------------------------- */
+
+.billing__states {
+      flex: 0 1 280px;
+
+}
+/* ------------------------------------------------------- */
+
+.billing__zip-code {
+      flex: 0 1 280px;
+
+}
+/* ------------------------------------------------------- */
+
+.billing__email {
+      flex: 0 1 428px;
+
+}
+/* ------------------------------------------------------- */
+
+.billing__phone {
+      flex: 0 1 428px;
+}
+/* ------------------------------------------------------- */
+
+.billing__different {
+   flex: 0 1 auto;
+}
+.billing__input--checkbox {
+   width: 0px;
+   height: 0px;
+   opacity: 0;
+}
+.billing__input--checkbox:checked + .billing__label-checkbox::before {
+   background: url(../img/checked.svg) center no-repeat;
+}
+.billing__input--checkbox:focus-visible + .billing__label-checkbox::before {
+   border: 1px solid #00B207;
+}
+.billing__label-checkbox {
+   gap: 6px;
+   color: #757575;
+   display: inline-flex;
+}
+.billing__label-checkbox:hover::before {
+   border: 1px solid #00B207;
+}
+
+.billing__label-checkbox::before {
+   content: '';
+   width: 20px;
+   height: 20px;
+   align-self: center;
+   border-radius: 3px;
+   border: 1px solid #E6E6E6;
+   transition: all 0.4s;
+}
+
+
+
+/* ------------------------------------------------------- */
+/* ------------------------------------------------------- */
+
+
+.additional {
+   padding: 32px 0px 80px 0px;
+
+}
+/* ------------------------------------------------------- */
+
+.additional__textarea {
+   border-radius: 6px;
+   border: 1px solid #E6E6E6;
+   min-height: 100px;
+   padding: 14px 16px;
+	resize: vertical;
+}
+/* ------------------------------------------------------- */
+
+.order {
+   flex: 0 1 424px;
+   border: 1px solid #E6E6E6;
+   padding: 24px;
+   display: flex;
+   gap: 24px;
+   flex-direction: column;
+   align-self: start;
+}
+.order__previous {
+   display: flex;
+   gap: 12px;
+   flex-direction: column;
+}
+.order__head {
+   margin: 0px;
+}
+
+.order__body {
+   display: flex;
+   flex-direction: column;
+}
+.order__goods {
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   flex: 0 1 100%;
+   gap: 5px;
+}
+.order__link {
+   display: flex;
+   align-items: center;
+   gap: 6px;
+   
+}
+.order__image  {
+   position: relative;
+   width: 60px;
+   height: 60px;
+}
+.order__image img {
+   position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	object-fit: cover;
+}
+.order__delivery {
+   display: flex;
+   flex-direction: column;
+
+}
+.order__subtotal {
+   border-bottom: 1px solid #E6E6E6;
+   display: flex;
+   justify-content: space-between;
+   gap: 5px;
+   padding: 12px 0px;
+}
+.order__shipping {
+   border-bottom: 1px solid #E6E6E6;
+   display: flex;
+   justify-content: space-between;
+   gap: 5px;
+   padding: 12px 0px;
+}
+
+.order__total {
+   display: flex;
+   justify-content: space-between;
+   gap: 5px;
+   padding: 12px 0px;
+}
+/* ------------------------------------------------------- */
+.head--margin {
+   margin-bottom: 16px;
+}
+
+.order__items {
+   display: flex;
+   flex-direction: column;
+   gap: 10px;
+}
+.order__item {
+   align-self: start;
+}
+.order__input--radio {
+   width: 0px;
+   height: 0px;
+   opacity: 0;
+}
+.order__input--radio:checked + .order__label-radio::before {
+   background: url(../img/dot.svg) center no-repeat;
+   border: 1px solid #00B207;
+}
+.order__input--radio:focus-visible + .order__label-radio::before {
+   border: 1px solid #00B207;
+}
+.order__label-radio {
+   gap: 6px;
+   display: inline-flex;
+}
+.order__label-radio:hover::before {
+   border: 1px solid #00B207;
+}
+
+.order__label-radio::before {
+   content: '';
+   width: 20px;
+   height: 20px;
+   align-self: center;
+   border-radius: 50%;
+   border: 1px solid #E6E6E6;
+   transition: all 0.4s;
+}
+
+.order__buttons {
+   display: flex;
+   justify-content: space-around;
+}
+.order__button {
+   flex: 0 1 100%;
+   background: #00B207;
+   border-radius: 43px;
+   padding: 14px 0px;
+
+}
+.button__text {
+   color: #fff;
+   font-size: 16px;
+   font-weight: 600;
+}
+/* ------------------------------------------------------- */
+/* ------------------------------------------------------- */
+/* ------------------------------------------------------- */
+/* ------------------------------------------------------- */
+/* ------------------------------------------------------- */
+/* ------------------------------------------------------- */
+/* ------------------------------------------------------- */
+
+/* ------------------------------------------------------- */
+
+
