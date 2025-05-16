@@ -201,10 +201,16 @@ main {
    margin-top: -10px;
    transition: all 0.5s;
 }
+@media (max-width: 991.98px){
+   .item-products__cart {
+   background: url(../img/products/product.icons/bag.white.svg) center no-repeat, #00B207;
+   }
+}
 @media (max-width: 500px){
    .item-products__cart {
       flex: 1 1 100%;
       border-radius: 4px;
+      margin-bottom: 5px;
    }
 }
 /* ------------------------------------------------------- */
@@ -248,11 +254,7 @@ main {
 .header-block__button:hover {
    text-decoration: underline;
 }
-@media (any-hover: none) {
-   .item-products:hover .item-products__cart {
-   background: url(../img/products/product.icons/bag.white.svg) center no-repeat, #00B207;
-}
-}
+
 /* ------------------------------------------------------- */
 /* ------------------------------------------------------- */
 /* ------------------------------------------------------- */
