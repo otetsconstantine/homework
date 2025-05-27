@@ -71,13 +71,12 @@ main {
 .header-block__button {
    align-self: center;
 }
-._button::after {
+.button::after {
    content: '';
    background: url(../img/products/product.icons/arrow.svg) center no-repeat;
    width: 20px;
    height: 20px;
    align-self: center;
-
 }
 @media (any-hover: hover){
 .header-block__button:hover {
