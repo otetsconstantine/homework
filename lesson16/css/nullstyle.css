@@ -36,4 +36,33 @@ h6 {
 	font-weight: inherit;
 	font-size: inherit;
 }
-
+/* FORM */
+input,
+button,
+textarea {
+	font-family: inherit;
+	font-size: inherit;
+	line-height: inherit;
+	color: inherit;
+	background-color: transparent;
+}
+input,
+textarea,
+select {
+	width: 100%;
+}
+button,
+select,
+option,
+label {
+	cursor: pointer;
+}
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+textarea {
+	appearance: none;
+}
+label {
+	display: block;
+}
