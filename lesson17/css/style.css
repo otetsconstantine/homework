@@ -56,6 +56,7 @@ main {
 .card-blossomia:nth-child(3) {
    grid-column: 2 / 3;
    grid-row: 2 / 4;
+   padding-bottom: 37px;
 }
 .card-blossomia:nth-child(4) {
    grid-column: 3 / 4;
@@ -65,7 +66,7 @@ main {
 .card-blossomia:nth-child(5) {
    grid-column: 1 / 2;
    grid-row: 3 / 5;
-   padding-bottom: 37px;
+
 }
 .card-blossomia:nth-child(6) {
    grid-column: 2 / 3;
@@ -105,9 +106,13 @@ main {
    justify-content: space-between;
    gap: 14px;
 }
-.card-blossomia__cart {
+.card-blossomia__name {
    flex: 1 0 auto;
    color: #2c2c2c;
+   transition: all 0.4s;
+}
+.card-blossomia__name a {
+   transition: all 0.4s;
 }
 .card-blossomia__price {
    font-size: 18px;
@@ -162,7 +167,7 @@ main {
    .card-blossomia__cart:hover  {
       transform: scale(1.2);
    }
-   .card-blossomia__name:hover  {
+   .card-blossomia__name a:hover  {
       color: #b49978;
 }
    .blossomia__button:hover  {
@@ -173,12 +178,6 @@ main {
    }
 }
 @media (max-width: 900px){
-   /* .blossomia__body {
-   display: grid;
-   grid-template-columns: minmax(250px,1fr) minmax(250px,1fr);
-   grid-template-rows: minmax(60px,100px) minmax(180px,260px) minmax(180px,260px) minmax(180px,260px) minmax(180px,260px) minmax(70px,100px);
-   gap: 0px 18px;
- */
    .blossomia__body {
    grid-template-columns: repeat(2, 1fr);
    grid-template-rows: minmax(70px,auto) minmax(200px,auto);
