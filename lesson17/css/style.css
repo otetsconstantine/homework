@@ -569,7 +569,7 @@ main {
    flex-direction: column;
    padding: 5px;
    gap: 5px;
-   height: 100%;
+
 }
 .sale-box__subtitle--color {
    color: #1A1A1A;
