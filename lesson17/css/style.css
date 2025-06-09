@@ -523,7 +523,7 @@ main {
 .more-products {
    display: grid;
 	grid-template-columns: repeat(auto-fit, minmax(min(290px, 100%), 1fr));
-   grid-template-rows: repeat(1fr);
+   grid-auto-rows: 1fr;
 	gap: 24px;
 } 
 .column {
