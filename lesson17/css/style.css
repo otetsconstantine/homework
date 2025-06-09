@@ -33,7 +33,7 @@ main {
 .blossomia__body {
    display: grid;
    grid-template-columns: minmax(250px,400px) minmax(250px,370px) minmax(250px,370px);
-   grid-template-rows: minmax(180px,250px) minmax(180px,250px) minmax(180px,260px) minmax(180px,250px) minmax(120px,182px);
+   grid-template-rows: minmax(180px,250px) minmax(180px,250px) minmax(180px,260px) minmax(180px,250px) minmax(120px,200px);
    gap: 0px 24px;
 }
 .blossomia__header-block {
