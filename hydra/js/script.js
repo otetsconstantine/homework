@@ -56,11 +56,12 @@ function slidersInit() {
 			// Navigation arrows
 				navigation: {
 				nextEl: '.contacts__next',
-				prevEl: 'contacts__prev',
+				prevEl: '.contacts__prev',
 			},
 			breakpoints: {
 				320: {
 					slidesPerView: 1,
+					spaceBetween: 10,
 				},
 				768: {
 					slidesPerView: 2,
@@ -68,7 +69,7 @@ function slidersInit() {
 				},
 				1050: {
 					slidesPerView: 3,
-					spaceBetween: 24,
+					spaceBetween: 25,
 				},
 			},
 			
