@@ -122,7 +122,7 @@ function slidersInit() {
    });
 }
 
-	const servicesSlider = document.querySelector('.slider-services');
+	const servicesSlider = document.querySelector('.services__slider');
 	if (servicesSlider) {
    new Swiper(servicesSlider, {
       loop: true,
