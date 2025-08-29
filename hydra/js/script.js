@@ -1,24 +1,21 @@
 "use strict"
 
-// window.addEventListener('load', windowLoad)
+window.addEventListener('load', windowLoad)
 
-// let isMobile
+let isMobile
 
-// function windowLoad() {
-	// isMobile = window.navigator.userAgentData.mobile
-	// isMobile ? document.body.setAttribute('data-touch', '') : null
+function windowLoad() {
+	isMobile = window.navigator.userAgentData.mobile
+	isMobile ? document.body.setAttribute('data-touch', '') : null
 
-	// document.addEventListener('click', documentActions)
-
-	// const coundown = document.querySelectorAll('[data-coundown]')
-	// coundown.length ? initCoundown(coundown) : null
-
-	// dynamicAdaptHeader();
-	// slidersInit();
-// }
 	document.addEventListener('click', documentActions)
+
+	const coundown = document.querySelectorAll('[data-coundown]')
+	coundown.length ? initCoundown(coundown) : null
+
 	dynamicAdaptHeader();
 	slidersInit();
+}
 function documentActions(e) {
 	const targetElement = e.target
 	if (targetElement.closest('.icon-menu')) {
@@ -26,7 +23,13 @@ function documentActions(e) {
 		document.documentElement.classList.toggle('open-menu')
 	}
 }
+const btn = document.querySelector(".technologies__button");
+const block = document.querySelector(".technologies__body");
 
+btn.addEventListener("click", () => {
+	block.classList.toggle("active");
+   btn.classList.toggle("active");
+});
 function dynamicAdaptHeader() {
 	const headerMenu = document.querySelector('.menu-header__body')
 
@@ -50,61 +53,6 @@ function dynamicAdaptHeader() {
 		}
 	}
 }
-
-// function slidersInit() {
-// 	if (document.querySelector('.slider-contacts')) {
-// 		const sliderContacts = new Swiper('.slider-contacts', {
-// 			loop: true,
-// 			// Navigation arrows
-// 				navigation: {
-// 				nextEl: '.contacts__next',
-// 				prevEl: '.contacts__prev',
-// 			},
-// 			breakpoints: {
-// 				320: {
-// 					slidesPerView: 1,
-// 					spaceBetween: 10,
-// 				},
-// 				768: {
-// 					slidesPerView: 2,
-// 					spaceBetween: 20,
-// 				},
-// 				1050: {
-// 					slidesPerView: 3,
-// 					spaceBetween: 25,
-// 				},
-// 			},
-// 		});
-// 	}
-// 	if (document.querySelector('.slider-services')) {
-// 		const sliderServices = new Swiper('.slider-services', {
-// 			loop: true,
-// 			// Navigation arrows
-// 				navigation: {
-// 				nextEl: '.services__next',
-// 				prevEl: '.services__prev',
-// 			},
-// 			breakpoints: {
-// 				320: {
-// 					slidesPerView: 1,
-// 					spaceBetween: 10,
-// 				},
-// 				450: {
-// 					slidesPerView: 2,
-// 					spaceBetween: 10,
-// 				},
-// 				767: {
-// 					slidesPerView: 3,
-// 					spaceBetween: 10,
-// 				},
-// 				1050: {
-// 					slidesPerView: 4,
-// 					spaceBetween: 10,
-// 				},
-// 			},
-// 		});
-// 	}
-// }
 function slidersInit() {
    const contactsSlider = document.querySelector('.slider-contacts');
    if (contactsSlider) {
@@ -137,5 +85,59 @@ function slidersInit() {
       1050: { slidesPerView: 4, spaceBetween: 10 },
       },
    });
+	const technologiesSlider = document.querySelector('.technologies__slider');
+	if (technologiesSlider) {
+   new Swiper(technologiesSlider, {
+      loop: true,
+      navigation: {
+      nextEl: '.technologies__next',
+      prevEl: '.technologies__prev',
+      },
+      breakpoints: {
+      320: { slidesPerView: 1, spaceBetween: 10 },
+      600: { slidesPerView: 2, spaceBetween: 20 },
+      767: { slidesPerView: 3, spaceBetween: 40 },
+      1050: { slidesPerView: 4, spaceBetween: 70 },
+      },
+   });
 }
 }
+	const howSlider = document.querySelector('.how__slider');
+	if (howSlider) {
+   new Swiper(howSlider, {
+      loop: true,
+      navigation: {
+      nextEl: '.how__next',
+      prevEl: '.how__prev',
+      },
+      breakpoints: {
+      320: { slidesPerView: 1, spaceBetween: 10 },
+      600: { slidesPerView: 2, spaceBetween: 20 },
+      767: { slidesPerView: 3, spaceBetween: 20 },
+      1050: { slidesPerView: 4, spaceBetween: 20 },
+      },
+   });
+}
+}
+window.addEventListener("scroll", function() {
+   const header = document.querySelector(".header");
+   if (window.scrollY > 50) {
+      header.classList.add("active");
+   } else {
+      header.classList.remove("active");
+   }
+});
+
+
+// document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+// 	anchor.addEventListener('click', function (e) {
+// 		e.preventDefault();
+
+// 		const target = document.querySelector(this.getAttribute('href'));
+// 		if (target) {
+// 			target.scrollIntoView({
+// 				behavior: 'smooth'
+// 			});
+// 		}
+// 	});
+// });

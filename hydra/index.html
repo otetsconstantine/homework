@@ -57,7 +57,7 @@
          </section>
                <div class="page__contacts contacts" id="contacts">
                   <div class="contacts__container">
-                        <button aria-label="Previous slide" class="contacts__prev"></button>
+                     <button aria-label="Previous slide" class="contacts__prev"></button>
                         <div class="contacts__slider slider-contacts swiper">
                            <div class="slider-contacts__wrapper swiper-wrapper">
                            <article class="slider-contacts__slide swiper-slide">
@@ -94,8 +94,8 @@
                               </a>
                            </article>
                            </div>
-                     </div>
-                        <button aria-label="Next slide" class="contacts__next"></button>
+                        </div>
+                     <button aria-label="Next slide" class="contacts__next"></button>
                   </div>   
                </div>
          <section class="page__about about" id="about">
@@ -220,29 +220,39 @@
                </div>
                <button class="technologies__button"></button>
             </div>
+            <div class="technologies__body">
+               <button aria-label="Previous slide" class="technologies__prev"></button>
                <div class="technologies__slider swiper">
-                  <div class="technologies__wrapper swiper-wrapper">
-                     <div class="technologies__slide swiper-slide">
-
-                     </div>
-                  </div>
+                  <ul class="technologies__wrapper swiper-wrapper">
+                     <li class="technologies__slide swiper-slide">
+                        <a href="#" class="technologies__item technologies__item--padding">
+                           <img src="img/technology/01.png" alt="unreal">
+                        </a>
+                     </li>
+                     <li class="technologies__slide swiper-slide">
+                        <a href="#" class="technologies__item">
+                           <img src="img/technology/02.png" alt="unity">
+                        </a>
+                     </li>
+                     <li class="technologies__slide swiper-slide">
+                        <a href="#" class="technologies__item">
+                           <img src="img/technology/03.png" alt="oculus">
+                        </a>
+                     </li>
+                     <li class="technologies__slide swiper-slide">
+                        <a href="#" class="technologies__item">
+                           <img src="img/technology/04.png" alt="vive">
+                        </a>
+                     </li>
+                  </ul>
                </div>
-               <a href="#" class="technologies__item">
-                  <img src="img/icons/unreal.svg" alt="unreal">
-               </a>
-               <a href="#" class="technologies__item">
-                  <img src="img/icons/unity.svg" alt="unity">
-               </a>
-               <a href="#" class="technologies__item">
-                  <img src="img/icons/oculus.svg" alt="oculus">
-               </a>
-               <a href="#" class="technologies__item">
-                  <img src="img/icons/vive.svg" alt="vive">
-               </a>
-            </article>
-         </div>
+               <button aria-label="Next slide" class="technologies__next"></button>
+               </div>
+         </article>
+                  </div>
                </section>
-         <div class="page__how how" id="how-to">
+         <section class="page__how how" id="how-to">
+            <img src="/img/bg_vector/how_bg.png" class="how__bg" alt="image">
             <div class="how__container">
             <div class="how__header-block block-header">
                <div class="block-header__title">
@@ -252,42 +262,56 @@
                <p>Vitae sapien pellentesque habitant morbi tristique senectus et netus et. Feugiat nibh sed pulvinar proin gravida hendrerit lectus. Mi sit amet mauris commodo quis imperdiet massa tincidunt nunc. Viverra aliquet eget sit amet tellus. Ornare lectus sit amet est placerat in. Lectus magna fringilla urna porttitor rhoncus vitae.</p>
                </div>
                </div>
-               <div class="how__content">
-                  <figure class="how__item">
-                     <div class="how__text">
-                        <p>01</p>
-                     </div>
-                     <figcaption>
-                        <h3>3D Conception & Design</h3>
-                     </figcaption>
-                  </figure>
-                  <figure class="how__item">
-                     <div class="how__text">
-                        <p>02</p>
-                     </div>
-                     <figcaption>
-                        <h3>Interaction Design</h3>
-                     </figcaption>
-                  </figure>
-                  <figure class="how__item">
-                     <div class="how__text">
-                        <p>03</p>
-                     </div>
-                     <figcaption>
-                        <h3>VR World User Testing</h3>
-                     </figcaption>
-                  </figure>
-                  <figure class="how__item">
-                     <div class="how__text">
-                        <p>04</p>
-                     </div>
-                     <figcaption>
-                        <h3>Hydra VR Deploy</h3>
-                     </figcaption>
-                  </figure>
+               <div class="how__body">
+               <button aria-label="Previous slide" class="how__prev"></button>
+               <div class="how__slider swiper">
+                  <ul class="how__wrapper swiper-wrapper">
+                     <li class="how__slide swiper-slide">
+                        <div class="how__item">
+                           <div class="how__step">
+                              <p>01</p>
+                           </div>
+                           <div class="how__title">
+                              <h3>3D Conception & Design</h3>
+                           </div>
+                        </div>
+                     </li>
+                     <li class="how__slide swiper-slide">
+                        <div class="how__item">
+                           <div class="how__step">
+                              <p>02</p>
+                           </div>
+                           <div class="how__title">
+                              <h3>Interaction Design</h3>
+                           </div>
+                        </div>
+                     </li>
+                     <li class="how__slide swiper-slide">
+                        <div class="how__item">
+                           <div class="how__step">
+                              <p>03</p>
+                           </div>
+                           <div class="how__title">
+                              <h3>VR World User Testing</h3>
+                           </div>
+                        </div>
+                     </li>
+                     <li class="how__slide swiper-slide">
+                        <div class="how__item">
+                           <div class="how__step">
+                              <p>04</p>
+                           </div>
+                           <div class="how__title">
+                              <h3>Hydra VR Deploy</h3>
+                           </div>
+                        </div>
+                     </li>
+                  </ul>
+               </div>
+               <button aria-label="Next slide" class="how__next"></button>
                </div>
             </div>
-         </div>
+         </section>
          <section class="page__registration registration" id="registration">
             <div class="registration__container">
                <div class="registration__header">
@@ -315,10 +339,10 @@
                      <input name="form[]" required type="text" placeholder="Subject" class="form__input">
                   </div>
                   <div class="form__something">
-                     <input name="form[]" required type="textarea" placeholder="Tell Us Something..." class="form__input">
+                     <textarea  name="form[]" required type="textarea" placeholder="Tell Us Something..." class="form__textarea"></textarea>
                   </div>
                   <div class="form__send">
-                     <button type="submit" class="form__button button"></button>
+                     <button type="submit" class="form__button button">SEND TO HYDRA</button>
                   </div>
                </form>
             </div>
