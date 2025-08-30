@@ -938,9 +938,10 @@ body.scroll-lock {
   position: absolute;
   top: 0;
   left: 0;
-  min-height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
+  height: 100%;
+  width: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
   overflow: visible;
 }
 .about__body {
@@ -1067,9 +1068,11 @@ body.scroll-lock {
   position: absolute;
   top: 0;
   left: 0;
-  min-height: 100%;
+  height: 100%;
+  width: 100%;
   -o-object-fit: contain;
      object-fit: contain;
+  overflow: visible;
 }
 @media (max-width: 65.625rem) {
   .whi__services {
@@ -1588,12 +1591,13 @@ body.scroll-lock {
 }
 .how__bg {
   position: absolute;
-  width: 100%;
-  height: 100%;
   top: 2.5rem;
   left: 0;
+  height: 100%;
+  width: 100%;
   -o-object-fit: contain;
      object-fit: contain;
+  overflow: visible;
 }
 @media (max-width: 65.625em) {
   .how .how__body {
@@ -1654,11 +1658,12 @@ body.scroll-lock {
       -ms-flex-align: center;
           align-items: center;
   gap: 25px;
+  margin-bottom: 1.875rem;
 }
 .how .how__step {
   -webkit-box-flex: 0;
-      -ms-flex: 0 0 10rem;
-          flex: 0 0 10rem;
+      -ms-flex: 0 1 10rem;
+          flex: 0 1 10rem;
   border: 1.25rem solid rgba(14, 14, 14, 0.32);
   border-radius: 50%;
   aspect-ratio: 1;
@@ -1673,6 +1678,21 @@ body.scroll-lock {
   border-radius: 50%;
   aspect-ratio: 1;
   background: #8176AF;
+}
+@media (min-width: 81.25em) {
+  .how .how__step p {
+    padding: 40px;
+  }
+}
+@media (min-width: 20em) and (max-width: 81.25em) {
+  .how .how__step p {
+    padding: clamp( 20px , 13.4693877551px  +  2.0408163265vw , 40px );
+  }
+}
+@media (max-width: 20em) {
+  .how .how__step p {
+    padding: 20px;
+  }
 }
 .how .how__title {
   max-width: 15.625rem;

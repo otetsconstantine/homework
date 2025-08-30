@@ -85,6 +85,8 @@ function slidersInit() {
       1050: { slidesPerView: 4, spaceBetween: 10 },
       },
    });
+}
+   
 	const technologiesSlider = document.querySelector('.technologies__slider');
 	if (technologiesSlider) {
    new Swiper(technologiesSlider, {
@@ -100,8 +102,11 @@ function slidersInit() {
       1050: { slidesPerView: 4, spaceBetween: 70 },
       },
    });
+
 }
-}
+
+
+
 	const howSlider = document.querySelector('.how__slider');
 	if (howSlider) {
    new Swiper(howSlider, {
@@ -127,17 +132,3 @@ window.addEventListener("scroll", function() {
       header.classList.remove("active");
    }
 });
-
-
-// document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-// 	anchor.addEventListener('click', function (e) {
-// 		e.preventDefault();
-
-// 		const target = document.querySelector(this.getAttribute('href'));
-// 		if (target) {
-// 			target.scrollIntoView({
-// 				behavior: 'smooth'
-// 			});
-// 		}
-// 	});
-// });
