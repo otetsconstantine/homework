@@ -1678,8 +1678,8 @@ body.scroll-lock {
 }
 .how .how__step {
   -webkit-box-flex: 0;
-      -ms-flex: 0 1 10rem;
-          flex: 0 1 10rem;
+      -ms-flex: 0 0 10rem;
+          flex: 0 0 10rem;
   border: 1.25rem solid rgba(14, 14, 14, 0.32);
   border-radius: 50%;
   aspect-ratio: 1;
