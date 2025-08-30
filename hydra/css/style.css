@@ -940,9 +940,14 @@ body.scroll-lock {
   left: 0;
   height: 100%;
   width: 100%;
-  -o-object-fit: contain;
-     object-fit: contain;
+  -o-object-fit: cover;
+     object-fit: cover;
   overflow: visible;
+}
+@media (max-width: 61.99875em) {
+  .about__bg {
+    display: none;
+  }
 }
 .about__body {
   position: relative;
@@ -1073,6 +1078,11 @@ body.scroll-lock {
   -o-object-fit: contain;
      object-fit: contain;
   overflow: visible;
+}
+@media (max-width: 61.99875em) {
+  .whi__bg {
+    display: none;
+  }
 }
 @media (max-width: 65.625rem) {
   .whi__services {
@@ -1599,6 +1609,11 @@ body.scroll-lock {
      object-fit: contain;
   overflow: visible;
 }
+@media (max-width: 61.99875em) {
+  .how__bg {
+    display: none;
+  }
+}
 @media (max-width: 65.625em) {
   .how .how__body {
     padding-inline: 4.0625rem;
@@ -1905,4 +1920,17 @@ body.scroll-lock {
 .form__something textarea {
   min-height: 13.75rem;
   resize: vertical;
+}
+.footer__container {
+  position: relative;
+}
+.footer__bg {
+  position: absolute;
+  top: 2.5rem;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+  overflow: visible;
 }

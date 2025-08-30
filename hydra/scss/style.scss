@@ -590,8 +590,11 @@ body {
 		left: 0;
 		height: 100%;
 		width: 100%;
-		object-fit: contain;
+		object-fit: cover;
 		overflow: visible;
+		@media (max-width: toEm($tablet)){
+			display: none;
+		}
 		}
 		//.about__body
 
@@ -684,6 +687,9 @@ body {
 		width: 100%;
 		object-fit: contain;
 		overflow: visible;
+		@media (max-width: toEm($tablet)){
+			display: none;
+		}
 		}
 
 		// .whi__container
@@ -1074,6 +1080,9 @@ body {
 		width: 100%;
 		object-fit: contain;
 		overflow: visible;
+		@media (max-width: toEm($tablet)){
+			display: none;
+		}
 		}
 		// .how__container
 
@@ -1358,8 +1367,17 @@ body {
 		// .footer__container
 
 		&__container {
+			position: relative;
 		}
-
+		&__bg {
+		position: absolute;
+		top: toRem(40);
+		left: 0;
+		height: 100%;
+		width: 100%;
+		object-fit: contain;
+		overflow: visible;
+		}
 		// .footer__body
 
 		&__body {
