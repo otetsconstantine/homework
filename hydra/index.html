@@ -41,9 +41,9 @@
                <img src="img/bg_vector/hero_bg.png" class="hero__bg" alt="Image">
                <div class="hero__body">
                <div class="hero__content">
-                  <h1 class="hero__title">
-                     <span>Dive</span> Into The Depths Of <span>Virtual Reality</span>
-                  </h1>
+                  <div class="hero__title">
+                     <h1><span>Dive</span> Into The Depths Of <span>Virtual Reality</span></h1>
+                  </div>
                   <div class="hero__text">
                      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore nisl tincidunt eget. Lectus mauris eros in vitae .</p>
                   </div>
@@ -57,45 +57,50 @@
          </section>
                <div class="page__contacts contacts" id="contacts">
                   <div class="contacts__container">
+                     <div class="contacts__body">
                      <button aria-label="Previous slide" class="contacts__prev"></button>
-                        <div class="contacts__slider slider-contacts swiper">
-                           <div class="slider-contacts__wrapper swiper-wrapper">
-                           <article class="slider-contacts__slide swiper-slide">
-                              <a class="slider-contacts__link" href="#">
-                                 <div class="slider-contacts__image">
-                                    <img src="img/icons/Location-Icon.svg" alt="Image">
+                     <button aria-label="Next slide" class="contacts__next"></button>
+                        <div class="contacts__slider swiper">
+                           <div class="contacts__wrapper swiper-wrapper">
+                           <address class="contacts__slide swiper-slide">
+                              <a href="#" class="contacts__link link-contacts link-contacts--location">
+                                 <div class="link-contacts__body">
+                                 <div class="link-contacts__title">
+                                    <h2>Pay Us a Visit</h2>
                                  </div>
-                                 <div class="slider-contacts__body">
-                                 <h2 class="slider-contacts__title">Pay Us a Visit</h2>
-                                 <div class="slider-contacts__text"><p>Union St, Seattle, WA 98101, United States</p></div>
+                                 <div class="link-contacts__text">
+                                    <p>Union St, Seattle, WA 98101, United States</p>
                                  </div>
-                              </a>
-                           </article>
-                           <article class="slider-contacts__slide slider-contacts slider-contacts--line swiper-slide">
-                              <a class="slider-contacts__link" href="#">
-                                 <div class="slider-contacts__image">
-                                    <img src="img/icons/phone.svg" alt="Image">
-                                 </div>
-                                 <div class="slider-contacts__body">
-                                 <h2 class="slider-contacts__title">Give Us a Call</h2>
-                                 <div class="slider-contacts__text"><p>(110) 1111-1010</p></div>
                               </div>
                               </a>
-                           </article>
-                           <article class="slider-contacts__slide slider-contacts swiper-slide">
-                              <a class="slider-contacts__link" href="#">
-                                 <div class="slider-contacts__image">
-                                    <img src="img/icons/mail.svg" alt="Image">
+                           </address>
+                           <address class="contacts__slide swiper-slide contacts__slide--line">
+                              <a href="tel:(110) 1111-1010" class="contacts__link link-contacts link-contacts--phone">
+                                 <div class="link-contacts__body">
+                                 <div class="link-contacts__title">
+                                    <h2>Give Us a Call</h2>
                                  </div>
-                                 <div class="slider-contacts__body">
-                                 <h2 class="slider-contacts__title">Send Us a Message</h2>
-                                 <div class="slider-contacts__text"><p>Contact@HydraVTech.com</p></div>
+                                 <div class="link-contacts__text">
+                                    <p>(110) 1111-1010</p>
+                                 </div>
                               </div>
                               </a>
-                           </article>
+                           </address>
+                           <address class="contacts__slide swiper-slide">
+                              <a href="mailto:Contact@HydraVTech.com" class="contacts__link link-contacts link-contacts--mail">
+                                 <div class="link-contacts__body">
+                                 <div class="link-contacts__title">
+                                    <h2>Send Us a Message</h2>
+                                 </div>
+                                 <div class="link-contacts__text">
+                                    <p>Contact@HydraVTech.com</p>
+                                 </div>
+                              </div>
+                              </a>
+                           </address>
                            </div>
                         </div>
-                     <button aria-label="Next slide" class="contacts__next"></button>
+                     </div>
                   </div>   
                </div>
          <section class="page__about about" id="about">
@@ -352,26 +357,36 @@
          <div class="footer__container">
             <img src="img/bg_vector/footer_bg.png" class="footer__bg" alt="Image">
             <div class="footer__body">
-               <div class="footer__logo">
+               <div class="footer__column">
+               <div class="footer__item">
+               <a href="#" class="footer__logo">
                   <img src="img/logo.svg" alt="Image">
+               </a>
                </div>
+               <div class="footer__item footer__item--none">
                <div class="footer__menu">
-                  <ul class="footer__list">
-                     <li class="footer__item"><a href="#">ABOUT</a></li>
-                     <li class="footer__item"><a href="#">SERVICES</a></li>
-                     <li class="footer__item"><a href="#">TECHNOLOGIES</a></li>
-                     <li class="footer__item"><a href="#">HOW TO</a></li>
-                     <li class="footer__item"><a href="#">JOIN HYDRA</a></li>
+                  <ul class="footer__list list-footer">
+                     <li class="list-footer__item"><a href="#about">ABOUT</a></li>
+                     <li class="list-footer__item"><a href="#services">SERVICES</a></li>
+                     <li class="list-footer__item"><a href="#technologies">TECHNOLOGIES</a></li>
+                     <li class="list-footer__item"><a href="#how-to">HOW TO</a></li>
+                     <li class="list-footer__item"><a href="#registration">JOIN HYDRA</a></li>
                   </ul>
                </div>
+               </div>
+               </div>
+               <div class="footer__column">
+               <div class="footer__item footer__item--none">
                <div class="footer__submenu">
-                  <ul class="footer__list">
-                     <li class="footer__item"><a href="#">F.A.Q</a></li>
-                     <li class="footer__item"><a href="#">SITEMAP</a></li>
-                     <li class="footer__item"><a href="#">CONDITIONS</a></li>
-                     <li class="footer__item"><a href="#">LICENSES</a></li>
+                  <ul class="footer__list list-footer">
+                     <li class="list-footer__item"><a href="#">F.A.Q</a></li>
+                     <li class="list-footer__item"><a href="#">SITEMAP</a></li>
+                     <li class="list-footer__item"><a href="#">CONDITIONS</a></li>
+                     <li class="list-footer__item"><a href="#">LICENSES</a></li>
                   </ul>
                </div>
+            </div>
+            <div class="footer__item footer__item--not">
                <div class="footer__social social">
                   <div class="social__title">
                      <h2>SOCIALIZE WITH HYDRA</h2>
@@ -386,6 +401,8 @@
                   </ul>
                   <button class="social__button button">BUILD YOUR WORLD</button>
                </div>
+               </div>
+            </div>
             </div>
             <div class="footer__copyright">
                <p>2023 © HYDRA LANDING PAGE - BY ZINE. E. FALOUTI - ALL RIGHTS RESERVED  </p>

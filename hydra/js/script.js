@@ -93,7 +93,7 @@ function dynamicAdaptHeader() {
 	}
 }
 function slidersInit() {
-   const contactsSlider = document.querySelector('.slider-contacts');
+   const contactsSlider = document.querySelector('.contacts__slider');
    if (contactsSlider) {
       new Swiper(contactsSlider, {
       loop: true,
