@@ -894,6 +894,11 @@ body.scroll-lock {
     -webkit-transition: color 0.4s;
     transition: color 0.4s;
   }
+  .contacts__link:hover::before {
+    opacity: 0.7;
+    -webkit-transition: opacity 0.4s;
+    transition: opacity 0.4s;
+  }
 }
 
 .link-contacts--location::before {
@@ -1644,7 +1649,7 @@ body.scroll-lock {
 }
 .how .how__prev, .how .how__next {
   position: absolute;
-  top: 15rem;
+  top: 85%;
   z-index: 2;
   border-radius: 50%;
   border: 0.5625rem solid rgba(14, 14, 14, 0.32);
