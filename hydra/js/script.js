@@ -1,42 +1,3 @@
-"use strict"
-
-window.addEventListener('load', windowLoad)
-
-let isMobile
-
-function windowLoad() {
-   isMobile = window.navigator.userAgentData 
-      ? window.navigator.userAgentData.mobile 
-      : /Mobi/i.test(navigator.userAgent);
-
-   if (isMobile) document.body.setAttribute('data-touch', '')
-
-   document.addEventListener('click', documentActions)
-
-   const coundown = document.querySelectorAll('[data-coundown]')
-   if (coundown.length) initCoundown(coundown)
-
-   dynamicAdaptHeader();
-   slidersInit();
-}
-
-function documentActions(e) {
-   const targetElement = e.target
-   if (targetElement.closest('.icon-menu')) {
-      document.body.classList.toggle('scroll-lock')
-      document.documentElement.classList.toggle('open-menu')
-   }
-}
-
-const btn = document.querySelector(".technologies__button");
-const block = document.querySelector(".technologies__body");
-
-if (btn && block) {
-   btn.addEventListener("click", () => {
-      block.classList.toggle("active");
-      btn.classList.toggle("active");
-   });
-}
 // "use strict"
 
 // window.addEventListener('load', windowLoad)
@@ -44,31 +5,78 @@ if (btn && block) {
 // let isMobile
 
 // function windowLoad() {
-// 	isMobile = window.navigator.userAgentData.mobile
-// 	isMobile ? document.body.setAttribute('data-touch', '') : null
+//    isMobile = window.navigator.userAgentData 
+//       ? window.navigator.userAgentData.mobile 
+//       : /Mobi/i.test(navigator.userAgent);
 
-// 	document.addEventListener('click', documentActions)
+//    if (isMobile) document.body.setAttribute('data-touch', '')
 
-// 	const coundown = document.querySelectorAll('[data-coundown]')
-// 	coundown.length ? initCoundown(coundown) : null
+//    document.addEventListener('click', documentActions)
 
-// 	dynamicAdaptHeader();
-// 	slidersInit();
+//    const coundown = document.querySelectorAll('[data-coundown]')
+//    if (coundown.length) initCoundown(coundown)
+
+//    dynamicAdaptHeader();
+//    slidersInit();
 // }
+
 // function documentActions(e) {
-// 	const targetElement = e.target
-// 	if (targetElement.closest('.icon-menu')) {
-// 		document.body.classList.toggle('scroll-lock')
-// 		document.documentElement.classList.toggle('open-menu')
-// 	}
+//    const targetElement = e.target
+//    if (targetElement.closest('.icon-menu')) {
+//       document.body.classList.toggle('scroll-lock')
+//       document.documentElement.classList.toggle('open-menu')
+//    }
 // }
+
 // const btn = document.querySelector(".technologies__button");
 // const block = document.querySelector(".technologies__body");
 
-// btn.addEventListener("click", () => {
-// 	block.classList.toggle("active");
-//    btn.classList.toggle("active");
-// });
+// if (btn && block) {
+//    btn.addEventListener("click", () => {
+//       block.classList.toggle("active");
+//       btn.classList.toggle("active");
+//    });
+// }
+"use strict"
+
+window.addEventListener('load', windowLoad)
+
+let isMobile
+
+function windowLoad() {
+	isMobile = window.navigator.userAgentData.mobile
+	isMobile ? document.body.setAttribute('data-touch', '') : null
+
+	document.addEventListener('click', documentActions)
+
+	const coundown = document.querySelectorAll('[data-coundown]')
+	coundown.length ? initCoundown(coundown) : null
+
+	dynamicAdaptHeader();
+	slidersInit();
+}
+function documentActions(e) {
+	const targetElement = e.target
+	if (targetElement.closest('.icon-menu')) {
+		document.body.classList.toggle('scroll-lock')
+		document.documentElement.classList.toggle('open-menu')
+	}
+}
+window.addEventListener("scroll", function() {
+   const header = document.querySelector(".header");
+   if (window.scrollY > 50) {
+      header.classList.add("active");
+   } else {
+      header.classList.remove("active");
+   }
+});
+const btn = document.querySelector(".technologies__button");
+const block = document.querySelector(".technologies__body");
+
+btn.addEventListener("click", () => {
+	block.classList.toggle("active");
+   btn.classList.toggle("active");
+});
 function dynamicAdaptHeader() {
 	const headerMenu = document.querySelector('.menu-header__body')
 
@@ -160,11 +168,3 @@ function slidersInit() {
    });
 }
 }
-window.addEventListener("scroll", function() {
-   const header = document.querySelector(".header");
-   if (window.scrollY > 50) {
-      header.classList.add("active");
-   } else {
-      header.classList.remove("active");
-   }
-});
