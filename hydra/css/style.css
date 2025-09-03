@@ -1697,51 +1697,33 @@ body.scroll-lock {
   gap: 1.5625rem;
 }
 .how .how__step {
-  -webkit-box-flex: 0;
-      -ms-flex: 0 0 10rem;
-          flex: 0 0 10rem;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 12.375rem;
+          flex: 1 1 12.375rem;
   border: 1.25rem solid rgba(14, 14, 14, 0.32);
   border-radius: 50%;
   aspect-ratio: 1;
-}
-.how .how__step p {
-  line-height: 1.25;
   font-size: 4rem;
   font-weight: 700;
   color: #343045;
   text-align: center;
+}
+@media (max-width: 47.99875em) {
+  .how .how__step {
+    -ms-flex-preferred-size: 10rem;
+        flex-basis: 10rem;
+  }
+}
+.how .how__step p {
+  background: #8176AF;
   border-radius: 50%;
   aspect-ratio: 1;
-  background: #8176AF;
+  padding-block: 2.5rem;
 }
-@media (min-width: 81.25em) {
+@media (max-width: 47.99875em) {
   .how .how__step p {
-    padding-block: 40px;
-  }
-}
-@media (min-width: 20em) and (max-width: 81.25em) {
-  .how .how__step p {
-    padding-block: clamp( 20px , 13.4693877551px  +  2.0408163265vw , 40px );
-  }
-}
-@media (max-width: 20em) {
-  .how .how__step p {
-    padding-block: 20px;
-  }
-}
-@media (min-width: 81.25em) {
-  .how .how__step p {
-    padding-inline: 40px;
-  }
-}
-@media (min-width: 20em) and (max-width: 81.25em) {
-  .how .how__step p {
-    padding-inline: clamp( 20px , 13.4693877551px  +  2.0408163265vw , 40px );
-  }
-}
-@media (max-width: 20em) {
-  .how .how__step p {
-    padding-inline: 20px;
+    padding-block: 0.625rem;
+    width: 100%;
   }
 }
 .how .how__title {
@@ -1779,29 +1761,30 @@ body.scroll-lock {
   position: relative;
   z-index: 1;
 }
-.registration__container {
+.registration .registratione__body {
   border-radius: 6.25rem;
   background: radial-gradient(50% 50% at 50% 50%, #403A5F 0%, #211E2E 100%);
   -webkit-box-shadow: 0 0.25rem 0.25rem 0 rgba(0, 0, 0, 0.25);
           box-shadow: 0 0.25rem 0.25rem 0 rgba(0, 0, 0, 0.25);
+  padding-inline: 1.25rem;
 }
 @media (min-width: 81.25em) {
-  .registration__container {
+  .registration .registratione__body {
     padding-block: 90px;
   }
 }
 @media (min-width: 20em) and (max-width: 81.25em) {
-  .registration__container {
+  .registration .registratione__body {
     padding-block: clamp( 45px , 30.306122449px  +  4.5918367347vw , 90px );
   }
 }
 @media (max-width: 20em) {
-  .registration__container {
+  .registration .registratione__body {
     padding-block: 45px;
   }
 }
 @media (max-width: 47.99875em) {
-  .registration__container {
+  .registration .registratione__body {
     border-radius: 2.5rem;
   }
 }
@@ -2175,22 +2158,6 @@ body.scroll-lock {
 .footer__menu {
   margin: 0 auto;
 }
-@media (any-hover: hover) and (any-pointer: fine) {
-  .footer__item li:hover a {
-    text-shadow: 0.3125rem 0.3125rem 0.125rem #000000;
-    scale: 1.2;
-    translate: 0rem -0.3125rem;
-    -webkit-transition: scale 0.3s, translate 0.3s, text-shadow 0.3s;
-    transition: scale 0.3s, translate 0.3s, text-shadow 0.3s;
-  }
-  .footer__item li:active a {
-    text-shadow: 0.1875rem 0.1875rem 0.0625rem #000000;
-    scale: 1.1;
-    translate: 0rem -0.1875rem;
-    -webkit-transition: scale 0.2s, translate 0.2s, text-shadow 0.2s;
-    transition: scale 0.2s, translate 0.2s, text-shadow 0.2s;
-  }
-}
 .footer__submenu {
   margin: 0 auto;
 }
@@ -2274,6 +2241,22 @@ body.scroll-lock {
 .list-footer :not(:last-child) {
   margin-bottom: 0.625rem;
 }
+@media (any-hover: hover) and (any-pointer: fine) {
+  .list-footer li:hover a {
+    text-shadow: 0.3125rem 0.3125rem 0.125rem #000000;
+    scale: 1.2;
+    translate: 0rem -0.3125rem;
+    -webkit-transition: scale 0.3s, translate 0.3s, text-shadow 0.3s;
+    transition: scale 0.3s, translate 0.3s, text-shadow 0.3s;
+  }
+  .list-footer li:active a {
+    text-shadow: 0.1875rem 0.1875rem 0.0625rem #000000;
+    scale: 1.1;
+    translate: 0rem -0.1875rem;
+    -webkit-transition: scale 0.2s, translate 0.2s, text-shadow 0.2s;
+    transition: scale 0.2s, translate 0.2s, text-shadow 0.2s;
+  }
+}
 
 .social__list {
   display: -webkit-box;
@@ -2286,6 +2269,10 @@ body.scroll-lock {
   margin-bottom: 0.625rem;
 }
 .social__item {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 2rem;
+          flex: 0 0 2rem;
+  aspect-ratio: 1;
   opacity: 0.6;
 }
 @media (any-hover: hover) and (any-pointer: fine) {
