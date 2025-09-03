@@ -1907,6 +1907,10 @@ body.scroll-lock {
   padding-inline: 2.8125rem;
   border-radius: 2.5rem;
   border: 0.125rem solid #FFF;
+  font-size: 16px;
+  -webkit-transform: scale(0.875);
+      -ms-transform: scale(0.875);
+          transform: scale(0.875);
 }
 @media (min-width: 81.25em) {
   .form__input, .form__textarea {
@@ -2267,9 +2271,6 @@ body.scroll-lock {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   gap: 1.25rem;
   margin-bottom: 0.625rem;
 }

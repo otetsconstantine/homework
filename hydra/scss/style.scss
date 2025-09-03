@@ -1369,6 +1369,8 @@ body {
 			padding-inline:toRem(45);
 			border-radius: toRem(40);
 			border: toRem(2) solid #FFF;
+			font-size: 16px;
+			transform: scale(0.875);
 			&::placeholder {
 				color: #fff;
 			}
@@ -1616,7 +1618,6 @@ body {
 
 		&__list {
 			display: flex;
-			align-items: center;
 			gap: toRem(20);
 			margin-bottom: toRem(10);
 		}

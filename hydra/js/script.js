@@ -1,42 +1,3 @@
-// "use strict"
-
-// window.addEventListener('load', windowLoad)
-
-// let isMobile
-
-// function windowLoad() {
-//    isMobile = window.navigator.userAgentData 
-//       ? window.navigator.userAgentData.mobile 
-//       : /Mobi/i.test(navigator.userAgent);
-
-//    if (isMobile) document.body.setAttribute('data-touch', '')
-
-//    document.addEventListener('click', documentActions)
-
-//    const coundown = document.querySelectorAll('[data-coundown]')
-//    if (coundown.length) initCoundown(coundown)
-
-//    dynamicAdaptHeader();
-//    slidersInit();
-// }
-
-// function documentActions(e) {
-//    const targetElement = e.target
-//    if (targetElement.closest('.icon-menu')) {
-//       document.body.classList.toggle('scroll-lock')
-//       document.documentElement.classList.toggle('open-menu')
-//    }
-// }
-
-// const btn = document.querySelector(".technologies__button");
-// const block = document.querySelector(".technologies__body");
-
-// if (btn && block) {
-//    btn.addEventListener("click", () => {
-//       block.classList.toggle("active");
-//       btn.classList.toggle("active");
-//    });
-// }
 "use strict"
 
 window.addEventListener('load', windowLoad)
@@ -51,6 +12,22 @@ function documentActions(e) {
 	if (targetElement.closest('.icon-menu')) {
 		document.body.classList.toggle('scroll-lock')
 		document.documentElement.classList.toggle('open-menu')
+	}
+   if (targetElement.closest('.menu-header__item')) {
+		document.body.classList.remove('scroll-lock');
+		document.documentElement.classList.remove('open-menu');
+	}
+   if (targetElement.closest('.buttons__button')) {
+		document.body.classList.remove('scroll-lock');
+		document.documentElement.classList.remove('open-menu');
+	}
+   if (
+		document.documentElement.classList.contains('open-menu') &&
+		!targetElement.closest('.menu-header') &&
+		!targetElement.closest('.icon-menu')
+	) {
+		document.body.classList.remove('scroll-lock');
+		document.documentElement.classList.remove('open-menu');
 	}
 }
 window.addEventListener("scroll", function() {
