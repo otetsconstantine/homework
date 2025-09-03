@@ -81,6 +81,7 @@ label {
 
 html {
   scroll-behavior: smooth;
+  scroll-padding-top: 7.1875rem;
 }
 
 body {
@@ -326,24 +327,6 @@ body.scroll-lock {
   font-size: 0.75rem;
   text-transform: uppercase;
   font-weight: 700;
-}
-@media (min-width: 81.25em) {
-  .header {
-    -webkit-margin-after: 50px;
-            margin-block-end: 50px;
-  }
-}
-@media (min-width: 20em) and (max-width: 81.25em) {
-  .header {
-    -webkit-margin-after: clamp( 0.000001px , -16.3265292857px  +  5.1020407143vw , 50px );
-            margin-block-end: clamp( 0.000001px , -16.3265292857px  +  5.1020407143vw , 50px );
-  }
-}
-@media (max-width: 20em) {
-  .header {
-    -webkit-margin-after: 0.000001px;
-            margin-block-end: 0.000001px;
-  }
 }
 .header.active {
   backdrop-filter: blur(0.3125rem);
@@ -598,6 +581,24 @@ body.scroll-lock {
 }
 .page__hero {
   position: relative;
+}
+@media (min-width: 81.25em) {
+  .hero__container {
+    -webkit-padding-before: 50px;
+            padding-block-start: 50px;
+  }
+}
+@media (min-width: 20em) and (max-width: 81.25em) {
+  .hero__container {
+    -webkit-padding-before: clamp( 0.000001px , -16.3265292857px  +  5.1020407143vw , 50px );
+            padding-block-start: clamp( 0.000001px , -16.3265292857px  +  5.1020407143vw , 50px );
+  }
+}
+@media (max-width: 20em) {
+  .hero__container {
+    -webkit-padding-before: 0.000001px;
+            padding-block-start: 0.000001px;
+  }
 }
 .hero__body {
   position: relative;
@@ -1694,7 +1695,6 @@ body.scroll-lock {
       -ms-flex-align: center;
           align-items: center;
   gap: 1.5625rem;
-  margin-bottom: 1.875rem;
 }
 .how .how__step {
   -webkit-box-flex: 0;
@@ -1727,6 +1727,21 @@ body.scroll-lock {
 @media (max-width: 20em) {
   .how .how__step p {
     padding-block: 20px;
+  }
+}
+@media (min-width: 81.25em) {
+  .how .how__step p {
+    padding-inline: 40px;
+  }
+}
+@media (min-width: 20em) and (max-width: 81.25em) {
+  .how .how__step p {
+    padding-inline: clamp( 20px , 13.4693877551px  +  2.0408163265vw , 40px );
+  }
+}
+@media (max-width: 20em) {
+  .how .how__step p {
+    padding-inline: 20px;
   }
 }
 .how .how__title {
