@@ -41,17 +41,8 @@
 
 window.addEventListener('load', windowLoad)
 
-let isMobile
-
 function windowLoad() {
-	isMobile = window.navigator.userAgentData.mobile
-	isMobile ? document.body.setAttribute('data-touch', '') : null
-
 	document.addEventListener('click', documentActions)
-
-	const coundown = document.querySelectorAll('[data-coundown]')
-	coundown.length ? initCoundown(coundown) : null
-
 	dynamicAdaptHeader();
 	slidersInit();
 }
