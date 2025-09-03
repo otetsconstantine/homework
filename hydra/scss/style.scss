@@ -1618,6 +1618,7 @@ body {
 
 		&__list {
 			display: flex;
+			align-self: start;
 			gap: toRem(20);
 			margin-bottom: toRem(10);
 		}
