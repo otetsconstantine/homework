@@ -1766,7 +1766,7 @@ body.scroll-lock {
   position: relative;
   z-index: 1;
 }
-.registration .registratione__body {
+.registration .registration__body {
   border-radius: 6.25rem;
   background: radial-gradient(50% 50% at 50% 50%, #403A5F 0%, #211E2E 100%);
   -webkit-box-shadow: 0 0.25rem 0.25rem 0 rgba(0, 0, 0, 0.25);
@@ -1774,22 +1774,22 @@ body.scroll-lock {
   padding-inline: 1.25rem;
 }
 @media (min-width: 81.25em) {
-  .registration .registratione__body {
+  .registration .registration__body {
     padding-block: 90px;
   }
 }
 @media (min-width: 20em) and (max-width: 81.25em) {
-  .registration .registratione__body {
+  .registration .registration__body {
     padding-block: clamp( 45px , 30.306122449px  +  4.5918367347vw , 90px );
   }
 }
 @media (max-width: 20em) {
-  .registration .registratione__body {
+  .registration .registration__body {
     padding-block: 45px;
   }
 }
 @media (max-width: 47.99875em) {
-  .registration .registratione__body {
+  .registration .registration__body {
     border-radius: 2.5rem;
   }
 }
