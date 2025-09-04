@@ -329,7 +329,7 @@ body.scroll-lock {
   font-weight: 700;
 }
 .header.active {
-  backdrop-filter: blur(0.3125rem);
+  background-color: #302C42;
 }
 .header__container {
   display: -webkit-box;
@@ -539,7 +539,7 @@ body.scroll-lock {
     -webkit-transition: left 0.5s;
     transition: left 0.5s;
     overflow: auto;
-    padding: 6.25rem 0.9375rem 0.625rem 0.9375rem;
+    padding: 7.5rem 0.9375rem 0.625rem 0.9375rem;
     background: rgba(48, 44, 66, 0.5);
   }
   .open-menu .menu {
