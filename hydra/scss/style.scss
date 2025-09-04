@@ -1371,7 +1371,6 @@ body {
 			border: toRem(2) solid #FFF;
 			@media (max-width: toRem($mobile)){
 			font-size: 16px;
-			// transform: scale(0.875);
 			}
 			
 			&::placeholder {
@@ -1621,7 +1620,8 @@ body {
 
 		&__list {
 			display: flex;
-			align-self: start;
+			align-items: center;
+			justify-content: center;
 			gap: toRem(20);
 			margin-bottom: toRem(10);
 		}
