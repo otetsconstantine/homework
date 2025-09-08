@@ -8,10 +8,9 @@ html {
 body {
 	font-family: "Montserrat", sans-serif;
 	color: #fff;
-
 	@include adaptiveValue("font-size", 16, 12);
 	line-height: 1.5;
-	&.scroll-lock {
+	&.scroll-lock, &.lock {
 		overflow: hidden;
 		touch-action: none;
 		overscroll-behavior: none;
@@ -152,7 +151,7 @@ body {
 		}
 		&__buttons {
 			z-index: 10;
-			@media (max-width: toEm(800)){
+			@media (max-width: toEm($tablet)){
 			flex-grow: 1;
 			}
 		}
@@ -160,19 +159,36 @@ body {
 			
 }
 }
+
+
+// =============================================
+.header__buttons {
+}
 .buttons {
-	&__body {
-			display: flex;
-			flex-wrap: wrap;
-			justify-content: end;
-			gap: toRem(10) toRem(38);
-			@media (max-width: toEm($tablet)) {
-				gap: toRem(10) toRem(5);
-			}
+	
+}
+.buttons__body {
+	display: flex;
+	align-items: center;
+	flex-wrap: wrap;
+	justify-content: flex-end;
+	gap: toRem(10) toRem(34);
+	@media (max-width: toEm(820)){
+		gap: toRem(10) toRem(10);
 	}
 }
+.buttons__button {
+}
+.button {
+}
+.button--padding {
+}
+
+// =============================================
+
+
 .logo {
-	z-index: 11;
+	z-index: 10;
 		display: flex;
 		align-items: center;
 		gap: toRem(15);
@@ -277,10 +293,20 @@ body {
 		}
 
 }
-
+// =====================================================
 
 .menu {
 	@media (max-width: toEm(800)) {
+		&::before{
+			content:'';
+			position: sticky;
+			width: 100%;
+			height: toRem(100);
+			top: 0;
+			left: 0;
+			background: rgba(48, 44, 66, 1);
+			z-index: 1;
+		}
 		display: block;
 		position: fixed;
 		width: 100%;
@@ -289,7 +315,7 @@ body {
 		left: 100%;
 		transition: left 0.5s;
 		overflow: auto;
-		padding: toRem(120) toRem(15) toRem(10) toRem(15); 
+		padding: toRem(0) toRem(20) toRem(10) toRem(15); 
 		background: rgba(48, 44, 66, 0.5);
 		.open-menu & {
 			left: 0;
@@ -1350,18 +1376,18 @@ body {
 			@include adaptiveValue("row-gap", 39, 22);
 			max-width: toRem(1070);
 			margin: 0 auto;
+			
 		}
 }
 // =====================================================================
 
 .form {
-
+	
 		// .form__first-name
 
 		&__first-name {
 			flex: 1 1 toRem(525);
 		}
-
 		// .form__input
 
 		&__input, &__textarea {
@@ -1370,7 +1396,7 @@ body {
 			border-radius: toRem(40);
 			border: toRem(2) solid #FFF;
 			@media (max-width: toRem($mobile)){
-			font-size: 16px;
+			font-size: toRem(16);
 			}
 			
 			&::placeholder {
@@ -1394,8 +1420,20 @@ body {
 			}
 
 		}
+		&__input, &__textarea {
+			&--smoll {
+				@include adaptiveValue("height", 50, 50);
+				padding-inline:toRem(15);
+			}
+		}
 			&__textarea {
 				padding-block: toRem(27);
+				min-height: toRem(220);
+				resize: vertical;
+				&--smoll {
+					min-height: 0;
+					padding-block: toRem(10);
+				}
 			}
 		// .form__last-name
 
@@ -1420,18 +1458,11 @@ body {
 		&__subject {
 			flex: 1 1 100%;
 		}
-
 		// .form__something
 
 		&__something {
 			flex: 1 1 100%;
-			& textarea {
-			min-height: toRem(220);
-			resize: vertical;
-			}
-			
 		}
-
 		// .form__send
 
 		&__send {
@@ -1645,4 +1676,93 @@ body {
 		&__button {
 		}
 }
+// =====================================================
 
+.contact {
+		position: fixed;
+		overflow-x: hidden;
+		overflow-y: auto;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		background: rgba(0, 0, 0, 0.6);
+		padding-inline: toRem(10);
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		z-index: 50;
+		opacity: 0;
+		visibility: hidden;
+		transition: opacity 0.3s ease;
+		// .contact__popup
+		&.active {
+			opacity: 1;
+			visibility: visible;
+		}
+
+		// .contact__form
+
+		&__form {
+			display: flex;
+			flex-wrap: wrap;
+			gap: toRem(20);
+			justify-content: center;
+		}
+}
+.join {
+		position: fixed;
+		overflow-x: hidden;
+		overflow-y: auto;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		background: rgba(0, 0, 0, 0.6);
+		padding-inline: toRem(10);
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		z-index: 50;
+		opacity: 0;
+		visibility: hidden;
+		transition: opacity 0.3s ease;
+		// .contact__popup
+		&.active {
+			opacity: 1;
+			visibility: visible;
+		}
+		// .join__form
+
+		&__form {
+			display: flex;
+			flex-wrap: wrap;
+			gap: toRem(10);
+			justify-content: center;
+			>* {
+
+			}
+		}
+}
+.popup {
+		background: #211E2E;
+		padding: toRem(30);
+		border-radius: toRem(12);
+		max-width: toRem(500);
+		box-shadow: 0 toRem(8) toRem(20) rgba(0,0,0,0.2);
+		position: relative;
+}
+.popup-close {
+	position: absolute;
+	line-height: 1;
+	top: toRem(10);
+	right: toRem(10);
+	font-size: toRem(20);
+	@media (any-hover: hover) and (any-pointer: fine) {
+				&:hover  {
+					color: #BAB1E2;
+					transition: color 0.4s;
+				}
+			}
+}
+// =====================================================

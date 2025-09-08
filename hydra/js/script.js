@@ -50,9 +50,9 @@ function dynamicAdaptHeader() {
 
 	const headerButtons = document.querySelector('.header__buttons')
 
-	const buttonsBody = document.querySelector('.buttons__body')
+	const buttonsList = document.querySelector('.buttons__body')
 
-	const media = window.matchMedia("(max-width: 479.98px)")
+	const media = window.matchMedia("(max-width: 480px)")
 
 	media.addEventListener("change", (e) => {
 		dynamicAdaptHeaderInit(media)
@@ -61,10 +61,10 @@ function dynamicAdaptHeader() {
 
 	function dynamicAdaptHeaderInit(media) {
 		if (media.matches) {
-			headerMenu.insertAdjacentElement('beforeend', buttonsBody)
+			headerMenu.insertAdjacentElement('beforeend', buttonsList)
 		} 
 		else {
-			headerButtons.insertAdjacentElement('beforeend', buttonsBody)
+			headerButtons.insertAdjacentElement('beforeend', buttonsList)
 		}
 	}
 }
@@ -136,3 +136,77 @@ function slidersInit() {
    });
 }
 }
+// const openContact = document.getElementById("openContact");
+// const openJoin = document.getElementById("openJoin");
+// const closePopupJoin = document.getElementById("closePopupJoin");
+// const closePopupContact = document.getElementById("closePopupContact");
+// const popupContact = document.getElementById("popupContact");
+// const popupJoin = document.getElementById("popupJoin");
+
+// // Відкрити
+// openContact.addEventListener("click", () => {
+//    popupContact.classList.add("active");
+// });
+// openJoin.addEventListener("click", () => {
+//    popupJoin.classList.add("active");
+// });
+
+// // Закрити по кнопці
+// closePopupContact.addEventListener("click", () => {
+//    popupContact.classList.remove("active");
+// });
+// closePopupJoin.addEventListener("click", () => {
+//    popupJoin.classList.remove("active");
+// });
+
+// // Закрити по кліку поза вікном
+// popupContact.addEventListener("click", (e) => {
+//    if (e.target === popupContact) {
+//    popupContact.classList.remove("active");
+//    }
+// });
+// popupJoin.addEventListener("click", (e) => {
+//    if (e.target === popupJoin) {
+//    popupJoin.classList.remove("active");
+//    }
+// });
+const openContact = document.getElementById("openContact");
+const openJoin = document.getElementById("openJoin");
+const closePopupJoin = document.getElementById("closePopupJoin");
+const closePopupContact = document.getElementById("closePopupContact");
+const popupContact = document.getElementById("popupContact");
+const popupJoin = document.getElementById("popupJoin");
+
+// Відкрити
+openContact.addEventListener("click", () => {
+   popupContact.classList.add("active");
+   document.body.classList.add("lock"); // блок скролу
+});
+openJoin.addEventListener("click", () => {
+   popupJoin.classList.add("active");
+   document.body.classList.add("lock");
+});
+
+// Закрити по кнопці
+closePopupContact.addEventListener("click", () => {
+   popupContact.classList.remove("active");
+   document.body.classList.remove("lock"); // розблокувати
+});
+closePopupJoin.addEventListener("click", () => {
+   popupJoin.classList.remove("active");
+   document.body.classList.remove("lock");
+});
+
+// Закрити по кліку поза вікном
+popupContact.addEventListener("click", (e) => {
+   if (e.target === popupContact) {
+      popupContact.classList.remove("active");
+      document.body.classList.remove("lock");
+   }
+});
+popupJoin.addEventListener("click", (e) => {
+   if (e.target === popupJoin) {
+      popupJoin.classList.remove("active");
+      document.body.classList.remove("lock");
+   }
+});

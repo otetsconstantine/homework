@@ -28,8 +28,8 @@
                </div>
                   <div class="header__buttons buttons">
                      <div class="buttons__body">
-                     <a href="#contacts" class="buttons__button button button--padding"><span>CONTACT US</span></a>
-                     <a href="#registration" class="buttons__button button button--padding"><span>JOIN HYDRA</span></a>
+                     <button class="buttons__button button button--padding" id="openContact"><span>CONTACT US</span></button>
+                     <button class="buttons__button button button--padding" id="openJoin"><span>JOIN HYDRA</span></button>
                      </div>
                   </div>
                <button class="header__icon-menu icon-menu" aria-label="Menu" type="button"><span></span></button>
@@ -432,6 +432,48 @@
             </div>
          </div>
       </footer>
+   </div>
+   <div class="contact" id="popupContact">
+      <div class="contact__popup popup">
+      <button class="popup-close" id="closePopupContact">X</button>
+            <form method="POST" enctype="multipart/form-data" action="#" class="contact__form form">
+                  <div class="form__email">
+                     <input name="form[]" type="text" placeholder="Your Number or email" class="form__input form__input--smoll">
+                  </div>
+                  <div class="form__something">
+                     <textarea name="form[]" autocomplete="off" placeholder="Tell Us Something..." class="form__textarea form__textarea--smoll"></textarea>
+                  </div>
+                  <button type="submit" class="form__button button">SEND</button>
+               </form>
+      </div>
+   </div>
+   <div class="join" id="popupJoin">
+      <div class="join__popup popup">
+      <button class="popup-close" id="closePopupJoin">X</button>
+            <form method="POST" enctype="multipart/form-data" action="#" class="join__form form">
+                  <div class="form__first-name">
+                     <input name="form[]" required type="text" placeholder="First Name" class="form__input form__input--smoll">
+                  </div>
+                  <div class="form__last-name">
+                     <input name="form[]" required type="text" placeholder="Last Name" class="form__input form__input--smoll">
+                  </div>
+                  <div class="form__email">
+                     <input name="form[]" required type="email" placeholder="Email" class="form__input form__input--smoll">
+                  </div>
+                  <div class="form__phone">
+                     <input name="form[]" required type="tel" placeholder="Phone Number" class="form__input form__input--smoll">
+                  </div>
+                  <div class="form__subject">
+                     <input name="form[]" type="text" placeholder="Subject" class="form__input form__input--smoll">
+                  </div>
+                  <div class="form__something">
+                     <textarea name="form[]" autocomplete="off" placeholder="Tell Us Something..." class="form__textarea form__textarea--smoll"></textarea>
+                  </div>
+                  <div class="form__send">
+                     <button type="submit" class="form__button button">SEND TO HYDRA</button>
+                  </div>
+               </form>
+      </div>
    </div>
    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
    <script src="./js/script.js" defer></script>
