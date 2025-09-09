@@ -379,7 +379,7 @@ body {
 		}
 		&__bg {
 		position: absolute;
-		top: toRem(-25);
+		top: 0;
 		left: 0;
 		width: 100%;
 		height: 100%;
@@ -1494,7 +1494,7 @@ body {
 		&__bg {
 		position: absolute;
 		top: toRem(-200);
-		left: 0;
+		left: toRem(50);
 		height: 100%;
 		width: 100%;
 		object-fit: contain;
@@ -1520,7 +1520,7 @@ body {
 			align-items: flex-start;
 			row-gap: toRem(20);
 			column-gap: toRem(20);
-			@media (max-width: toEm($mobile)){
+			@media (max-width: toEm($tablet)){
 				justify-content: center;
 			}
 		}
@@ -1532,7 +1532,7 @@ body {
 			align-items: flex-start;
 			justify-content: space-between;
 			&--none{
-				@media (max-width: toEm($mobile)){
+				@media (max-width: toEm($tablet)){
 				display: none;
 			}
 			}
@@ -1552,6 +1552,9 @@ body {
 		// .footer__logo
 
 		&__logo {
+			@media (max-width: toEm($tablet)){
+				margin: 0 auto;
+			}
 			img {
 				width: 100%;
 				height: 100%;
@@ -1569,7 +1572,7 @@ body {
 		// .footer__list
 
 		&__list {
-			
+
 		}
 
 		// .footer__item
@@ -1621,7 +1624,7 @@ body {
 }
 .list-footer {
 		:not(:last-child) {
-				margin-bottom: toRem(10);
+				margin-bottom: toRem(18);
 			}
 		li {
 		@media (any-hover: hover) and (any-pointer: fine) {
